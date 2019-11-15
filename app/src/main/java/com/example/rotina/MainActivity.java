@@ -2,13 +2,17 @@ package com.example.rotina;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,6 +29,17 @@ public class MainActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
 
         registerForContextMenu(listView);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if(campos[i].equalsIgnoreCase("linguagens")){
+                    Intent intent = new Intent(getBaseContext(),Main2Activity.class);
+                    startActivity(intent);
+                    finish();
+                }
+            }
+        });
     }
 
     @Override
