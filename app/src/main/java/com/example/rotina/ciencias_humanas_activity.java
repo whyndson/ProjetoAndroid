@@ -34,13 +34,17 @@ public class ciencias_humanas_activity extends AppCompatActivity {
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle item selection
         switch (item.getItemId()) {
-            case R.id.item2:
+            case R.id.ajuda:
                 Toast.makeText(this, "Deus te abençoe!", Toast.LENGTH_SHORT).show();
-            default:
-                return super.onOptionsItemSelected(item);
+                break;
+            case R.id.direitos_autorais:
+                Toast.makeText(this, "Esta seção ainda será implementada",
+                        Toast.LENGTH_SHORT).show();
+                break;
         }
+
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
