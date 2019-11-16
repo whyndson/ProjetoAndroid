@@ -36,11 +36,16 @@ public class MainActivity extends AppCompatActivity {
                 if(campos[position].equalsIgnoreCase("linguagens")){
                     Intent intent = new Intent(getBaseContext(),Main2Activity.class);
                     startActivity(intent);
-                    finish();
+
                 }else if(campos[position].equalsIgnoreCase("matemática")){
                     Intent intent = new Intent(getBaseContext(),MatematicaActivity.class);
                     startActivity(intent);
-                    finish();
+
+                }
+                else if(campos[position].equalsIgnoreCase("ciências da natureza")){
+                    Intent intent = new Intent(getBaseContext(),CienciasNaturezaActivitity.class);
+                    startActivity(intent);
+
                 }
             }
         });
