@@ -32,9 +32,13 @@ public class MainActivity extends AppCompatActivity {
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if(campos[i].equalsIgnoreCase("linguagens")){
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                if(campos[position].equalsIgnoreCase("linguagens")){
                     Intent intent = new Intent(getBaseContext(),Main2Activity.class);
+                    startActivity(intent);
+                    finish();
+                }else if(campos[position].equalsIgnoreCase("matemática")){
+                    Intent intent = new Intent(getBaseContext(),MatematicaActivity.class);
                     startActivity(intent);
                     finish();
                 }
