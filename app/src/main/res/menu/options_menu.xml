@@ -4,17 +4,7 @@
 
     <item
         android:id="@+id/item2"
-        android:title="Agenda">
-    </item>
-
-    <item
-        android:id="@+id/item3"
-        android:title="Cronograma">
-    </item>
-
-    <item
-        android:id="@+id/item4"
-        android:title="Mapa">
+        android:title="Ajuda">
     </item>
 
 </menu>

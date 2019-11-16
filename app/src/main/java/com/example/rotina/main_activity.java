@@ -10,10 +10,12 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class main_activity extends AppCompatActivity {
 
-    private static final String[] campos = {"Ciências humanas", "Ciências da natureza", "Linguagens", "Matemática"};
+    private static final String[] campos = {"Agenda", "Cronograma",
+            "Mapa", "Rascunhos", "Resumos"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,24 +32,21 @@ public class main_activity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                if(campos[position].equalsIgnoreCase("linguagens")){
-                    Intent intent = new Intent(getBaseContext(), linguagens_activity.class);
+                if(campos[position].equalsIgnoreCase("agenda")){
+                    Intent intent = new Intent(getBaseContext(), agenda_activity.class);
                     startActivity(intent);
-
-                }else if(campos[position].equalsIgnoreCase("matemática")){
-                    Intent intent = new Intent(getBaseContext(), matematica_activity.class);
+                }else if(campos[position].equalsIgnoreCase("cronograma")){
+                    Toast.makeText(getBaseContext(), "Esta seção ainda será implementada",
+                            Toast.LENGTH_SHORT).show();
+                }else if(campos[position].equalsIgnoreCase("mapa")){
+                    Toast.makeText(getBaseContext(), "Esta seção ainda será implementada",
+                            Toast.LENGTH_SHORT).show();
+                }else if(campos[position].equalsIgnoreCase("rascunhos")){
+                    Intent intent = new Intent(getBaseContext(), rascunhos_activity.class);
                     startActivity(intent);
-
-                }
-                else if(campos[position].equalsIgnoreCase("ciências da natureza")){
-                    Intent intent = new Intent(getBaseContext(), ciencias_natureza_activitity.class);
-                    startActivity(intent);
-
-                }
-                else if(campos[position].equalsIgnoreCase("ciências humanas")){
-                    Intent intent = new Intent(getBaseContext(), ciencias_humanas_activity.class);
-                    startActivity(intent);
-
+                }else if(campos[position].equalsIgnoreCase("resumos")){
+                    Toast.makeText(getBaseContext(), "Esta seção ainda será implementada",
+                            Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -64,11 +63,7 @@ public class main_activity extends AppCompatActivity {
         // Handle item selection
         switch (item.getItemId()) {
             case R.id.item2:
-                Intent intent = new Intent(getBaseContext(),agenda_activity.class);
-                startActivity(intent);
-                return true;
-            /*case R.id.item3:
-                return true;*/
+                Toast.makeText(this, "Deus te abençoe!", Toast.LENGTH_SHORT).show();
             default:
                 return super.onOptionsItemSelected(item);
         }

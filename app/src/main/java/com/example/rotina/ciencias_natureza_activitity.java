@@ -8,10 +8,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class ciencias_natureza_activitity extends AppCompatActivity {
 
-    private static final String[] campos = {"Assunto 1","Assunto 2","Assunto 3","Assunto 4","Assunto 5","Assunto 6","Assunto 7","Assunto 8","Assunto 9","Assunto 10"};
+    private static final String[] campos = {"Biologia", "Física","Química"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,11 +38,7 @@ public class ciencias_natureza_activitity extends AppCompatActivity {
         // Handle item selection
         switch (item.getItemId()) {
             case R.id.item2:
-                Intent intent = new Intent(getBaseContext(),agenda_activity.class);
-                startActivity(intent);
-                return true;
-            /*case R.id.item3:
-                return true;*/
+                Toast.makeText(this, "Deus te abençoe!", Toast.LENGTH_SHORT).show();
             default:
                 return super.onOptionsItemSelected(item);
         }
