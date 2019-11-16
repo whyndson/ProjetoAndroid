@@ -4,17 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.ContextMenu;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import java.util.ArrayList;
-
-public class MainActivity extends AppCompatActivity {
+public class main_activity extends AppCompatActivity {
 
     private static final String[] campos = {"Ciências humanas", "Ciências da natureza", "Linguagens", "Matemática"};
 
@@ -34,16 +30,21 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 if(campos[position].equalsIgnoreCase("linguagens")){
-                    Intent intent = new Intent(getBaseContext(),Main2Activity.class);
+                    Intent intent = new Intent(getBaseContext(), linguagens_activity.class);
                     startActivity(intent);
 
                 }else if(campos[position].equalsIgnoreCase("matemática")){
-                    Intent intent = new Intent(getBaseContext(),MatematicaActivity.class);
+                    Intent intent = new Intent(getBaseContext(), matematica_activity.class);
                     startActivity(intent);
 
                 }
                 else if(campos[position].equalsIgnoreCase("ciências da natureza")){
-                    Intent intent = new Intent(getBaseContext(),CienciasNaturezaActivitity.class);
+                    Intent intent = new Intent(getBaseContext(), ciencias_natureza_activitity.class);
+                    startActivity(intent);
+
+                }
+                else if(campos[position].equalsIgnoreCase("ciências humanas")){
+                    Intent intent = new Intent(getBaseContext(), ciencias_humanas_activity.class);
                     startActivity(intent);
 
                 }

@@ -7,18 +7,18 @@ import android.view.Menu;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class CienciasNaturezaActivitity extends AppCompatActivity {
+public class ciencias_natureza_activitity extends AppCompatActivity {
 
     private static final String[] campos = {"Assunto 1","Assunto 2","Assunto 3","Assunto 4","Assunto 5","Assunto 6","Assunto 7","Assunto 8","Assunto 9","Assunto 10"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ciencias_natureza_activitity);
+        setContentView(R.layout.activity_ciencias_natureza);
 
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, campos);
 
-        ListView listView = findViewById(R.id.list_view_natureza);
+        ListView listView = findViewById(R.id.list_view_ciencias_natureza);
         listView.setAdapter(adapter);
 
         registerForContextMenu(listView);

@@ -5,23 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".matematica_activity">
+    tools:context=".ciencias_natureza_activitity">
 
     <TextView
-        android:id="@+id/text_view_matematica"
+        android:id="@+id/text_view_ciencias_natureza"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:gravity="center"
         android:background="#2f4f4f"
         android:textSize="30dp"
         android:textColor="#ffffff"
-        android:text="MATEMÁTICA"/>
+        android:text="CIÊNCIAS DA NATUREZA">
+    </TextView>
 
     <ListView
-        android:id="@+id/list_view_matematica"
-        android:layout_width="match_parent"
+        android:id="@+id/list_view_ciencias_natureza"
         android:layout_height="match_parent"
-        >
+        android:layout_width="match_parent">
 
     </ListView>
 

@@ -9,10 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CienciasNaturezaActivitity" android:parentActivityName=".MainActivity"></activity>
-        <activity android:name=".MatematicaActivity" android:parentActivityName=".MainActivity"></activity>
-        <activity android:name=".Main2Activity" android:parentActivityName=".MainActivity"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".ciencias_humanas_activity"></activity>
+        <activity
+            android:name=".ciencias_natureza_activitity"
+            android:parentActivityName=".main_activity" />
+        <activity
+            android:name=".matematica_activity"
+            android:parentActivityName=".main_activity" />
+        <activity
+            android:name=".linguagens_activity"
+            android:parentActivityName=".main_activity" />
+        <activity android:name=".main_activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

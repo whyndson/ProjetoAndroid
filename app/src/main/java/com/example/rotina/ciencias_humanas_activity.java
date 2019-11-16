@@ -7,20 +7,18 @@ import android.view.Menu;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import java.util.List;
+public class ciencias_humanas_activity extends AppCompatActivity {
 
-public class Main2Activity extends AppCompatActivity {
-
-    private static final String[] campos = {"Assunto 1","Assunto 2","Assunto 3","Assunto 4","Assunto 5","Assunto 6","Assunto 7","Assunto 8","Assunto 9","Assunto 10"};
+    private static final String[] campos = {"Assunto 1", "Assunto 2", "Assunto 3", "Assunto 4", "Assunto 5", "Assunto 6", "Assunto 7", "Assunto 8", "Assunto 9", "Assunto 10"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_ciencias_humanas);
 
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, campos);
 
-        ListView listView = findViewById(R.id.list_assuntos);
+        ListView listView = findViewById(R.id.list_view_ciencias_humanas);
         listView.setAdapter(adapter);
 
         registerForContextMenu(listView);
@@ -33,7 +31,7 @@ public class Main2Activity extends AppCompatActivity {
     }
 
     @Override
-    public void onBackPressed(){
+    public void onBackPressed() {
         super.onBackPressed();
         finish();
     }
