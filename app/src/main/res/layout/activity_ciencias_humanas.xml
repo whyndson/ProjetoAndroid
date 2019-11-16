@@ -15,7 +15,7 @@
         android:background="#2f4f4f"
         android:textSize="30dp"
         android:textColor="#ffffff"
-        android:text="CIÊNCIAS DA HUMANAS"/>
+        android:text="CIÊNCIAS HUMANAS"/>
 
     <ListView
         android:id="@+id/list_view_ciencias_humanas"
