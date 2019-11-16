@@ -1,4 +1,4 @@
-package com.example.rotina;
+package com.example.meubizu;
 
 import org.junit.Test;
 

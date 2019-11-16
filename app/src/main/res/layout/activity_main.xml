@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".main_activity">
+    tools:context=".mainActivity">
 
     <ListView
-        android:id="@+id/listview"
+        android:id="@+id/activity_main_list_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </ListView>

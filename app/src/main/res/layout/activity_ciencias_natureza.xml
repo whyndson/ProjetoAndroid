@@ -5,10 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ciencias_natureza_activitity">
+    tools:context=".cienciasnaturezaActivity">
 
     <TextView
-        android:id="@+id/text_view_ciencias_natureza"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:gravity="center"
@@ -19,10 +18,8 @@
     </TextView>
 
     <ListView
-        android:id="@+id/list_view_ciencias_natureza"
+        android:id="@+id/ciencias_natureza_list_view"
         android:layout_height="match_parent"
-        android:layout_width="match_parent">
-
-    </ListView>
+        android:layout_width="match_parent"/>
 
 </LinearLayout>

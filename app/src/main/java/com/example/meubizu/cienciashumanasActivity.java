@@ -1,8 +1,7 @@
-package com.example.rotina;
+package com.example.meubizu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -10,22 +9,19 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class matematica_activity extends AppCompatActivity {
+public class cienciashumanasActivity extends AppCompatActivity {
 
-    private static final String[] campos = {"Conjuntos", "Função Afim","Função Quadrática",
-            "Trigonometria","Geometria Espacial","Números Complexos"};
+    private static final String[] campos = {"Filosofia", "Geografia", "História", "Sociologia"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_matematica);
+        setContentView(R.layout.activity_ciencias_humanas);
 
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, campos);
 
-        ListView listView = findViewById(R.id.list_view_matematica);
+        ListView listView = findViewById(R.id.ciencias_humanas_list_view);
         listView.setAdapter(adapter);
-
-        registerForContextMenu(listView);
     }
 
     @Override
@@ -33,7 +29,6 @@ public class matematica_activity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.options_menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -50,7 +45,7 @@ public class matematica_activity extends AppCompatActivity {
     }
 
     @Override
-    public void onBackPressed(){
+    public void onBackPressed() {
         super.onBackPressed();
         finish();
     }

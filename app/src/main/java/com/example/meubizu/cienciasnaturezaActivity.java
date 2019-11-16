@@ -1,18 +1,27 @@
-package com.example.rotina;
+package com.example.meubizu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Toast;
 
-public class agenda_activity extends AppCompatActivity {
+public class cienciasnaturezaActivity extends AppCompatActivity {
+
+    private static final String[] campos = {"Biologia", "Física","Química"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_agenda_activity);
+        setContentView(R.layout.activity_ciencias_natureza);
+
+        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, campos);
+
+        ListView listView = findViewById(R.id.ciencias_natureza_list_view);
+        listView.setAdapter(adapter);
     }
 
     @Override
@@ -34,5 +43,11 @@ public class agenda_activity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed(){
+        super.onBackPressed();
+        finish();
     }
 }

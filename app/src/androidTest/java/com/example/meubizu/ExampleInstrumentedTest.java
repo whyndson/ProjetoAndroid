@@ -1,4 +1,4 @@
-package com.example.rotina;
+package com.example.meubizu;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.example.rotina", appContext.getPackageName());
+        assertEquals("com.example.meubizu", appContext.getPackageName());
     }
 }

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.rotina">
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.example.meubizu">
+
+    <dist:module dist:instant="true" />
 
     <application
         android:allowBackup="true"
@@ -9,24 +12,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".rascunho_activity"></activity>
-        <activity android:name=".rascunhos_activity" />
-        <activity
-            android:name=".agenda_activity"
-            android:parentActivityName=".main_activity" />
-        <activity
-            android:name=".ciencias_humanas_activity"
-            android:parentActivityName=".main_activity" />
-        <activity
-            android:name=".ciencias_natureza_activitity"
-            android:parentActivityName=".main_activity" />
-        <activity
-            android:name=".matematica_activity"
-            android:parentActivityName=".main_activity" />
-        <activity
-            android:name=".linguagens_activity"
-            android:parentActivityName=".main_activity" />
-        <activity android:name=".main_activity">
+        <activity android:name=".rascunhosActivity"></activity>
+        <activity android:name=".cienciasnaturezaActivity" />
+        <activity android:name=".cienciashumanasActivity" />
+        <activity android:name=".linguagensActivity" />
+        <activity android:name=".matematicaActivity" />
+        <activity android:name=".agendaActivity" />
+        <activity android:name=".mainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

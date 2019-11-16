@@ -1,4 +1,4 @@
-package com.example.rotina;
+package com.example.meubizu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,7 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class rascunhos_activity extends AppCompatActivity {
+public class rascunhosActivity extends AppCompatActivity {
 
     private static final String[] campos = {"Ciências humanas", "Ciências da Natureza", "Linguagens",
             "Matemática", "Redação"};
@@ -31,25 +31,23 @@ public class rascunhos_activity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 if(campos[position].equalsIgnoreCase("ciências humanas")){
-                    Intent intent = new Intent(getBaseContext(), ciencias_humanas_activity.class);
+                    Intent intent = new Intent(getBaseContext(), cienciashumanasActivity.class);
                     startActivity(intent);
-
                 }else if(campos[position].equalsIgnoreCase("ciências da natureza")){
-                    Intent intent = new Intent(getBaseContext(), ciencias_natureza_activitity.class);
+                    Intent intent = new Intent(getBaseContext(), cienciasnaturezaActivity.class);
                     startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("linguagens")){
-                    Intent intent = new Intent(getBaseContext(), linguagens_activity.class);
+                    Intent intent = new Intent(getBaseContext(), linguagensActivity.class);
                     startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("matemática")){
-                    Intent intent = new Intent(getBaseContext(), matematica_activity.class);
+                    Intent intent = new Intent(getBaseContext(), matematicaActivity.class);
                     startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("redação")){
                     Toast.makeText(getBaseContext(), "Esta seção ainda está a ser implementada",
-                            Toast.LENGTH_LONG);
+                            Toast.LENGTH_LONG).show();
                 }
             }
         });
-
     }
 
     @Override

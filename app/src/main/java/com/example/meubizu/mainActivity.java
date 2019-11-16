@@ -1,4 +1,4 @@
-package com.example.rotina;
+package com.example.meubizu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,7 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class main_activity extends AppCompatActivity {
+public class mainActivity extends AppCompatActivity {
 
     private static final String[] campos = {"Agenda", "Cronograma",
             "Mapa", "Rascunhos", "Resumos"};
@@ -24,7 +24,7 @@ public class main_activity extends AppCompatActivity {
 
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, campos);
 
-        ListView listView = findViewById(R.id.listview);
+        ListView listView = findViewById(R.id.activity_main_list_view);
         listView.setAdapter(adapter);
 
         registerForContextMenu(listView);
@@ -33,19 +33,19 @@ public class main_activity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 if(campos[position].equalsIgnoreCase("agenda")){
-                    Intent intent = new Intent(getBaseContext(), agenda_activity.class);
+                    Intent intent = new Intent(mainActivity.this, agendaActivity.class);
                     startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("cronograma")){
-                    Toast.makeText(getBaseContext(), "Esta seção ainda será implementada",
+                    Toast.makeText(mainActivity.this, "Esta seção ainda será implementada",
                             Toast.LENGTH_SHORT).show();
                 }else if(campos[position].equalsIgnoreCase("mapa")){
-                    Toast.makeText(getBaseContext(), "Esta seção ainda será implementada",
+                    Toast.makeText(mainActivity.this, "Esta seção ainda será implementada",
                             Toast.LENGTH_SHORT).show();
                 }else if(campos[position].equalsIgnoreCase("rascunhos")){
-                    Intent intent = new Intent(getBaseContext(), rascunhos_activity.class);
+                    Intent intent = new Intent(mainActivity.this, rascunhosActivity.class);
                     startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("resumos")){
-                    Toast.makeText(getBaseContext(), "Esta seção ainda será implementada",
+                    Toast.makeText(mainActivity.this, "Esta seção ainda será implementada",
                             Toast.LENGTH_SHORT).show();
                 }
             }
@@ -60,7 +60,6 @@ public class main_activity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
         switch (item.getItemId()) {
             case R.id.ajuda:
                 Toast.makeText(this, "Deus te abençoe!", Toast.LENGTH_SHORT).show();

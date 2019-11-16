@@ -5,10 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".linguagens_activity">
+    tools:context=".linguagensActivity">
 
     <TextView
-        android:id="@+id/text_view_linguagens"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:gravity="center"
@@ -18,7 +17,7 @@
         android:text="LINGUAGENS"/>
 
     <ListView
-        android:id="@+id/list_assuntos"
+        android:id="@+id/activity_linguagens_list_view"
         android:layout_height="match_parent"
         android:layout_width="match_parent">
 
