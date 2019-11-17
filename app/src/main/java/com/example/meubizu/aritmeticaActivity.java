@@ -27,7 +27,7 @@ public class aritmeticaActivity extends AppCompatActivity {
         //ListView listView = findViewById(R.id.aritmetica_list_view);
         //listView.setAdapter(adapter);
 
-        FloatingActionButton fbutton = findViewById(R.id.floating_button);
+        /*FloatingActionButton fbutton = findViewById(R.id.);
         fbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,7 +35,7 @@ public class aritmeticaActivity extends AppCompatActivity {
                         FormularioActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
     }
 
     @Override

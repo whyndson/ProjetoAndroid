@@ -31,14 +31,14 @@ public class rascunhosActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 if(campos[position].equalsIgnoreCase("biologia")){
-                    Toast.makeText(rascunhosActivity.this, "Esta seção ainda está a ser implementada",
-                            Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(rascunhosActivity.this, biologiaActivity.class);
+                    startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("filosofia")){
                     Intent intent = new Intent(rascunhosActivity.this, filosofiaActivity.class);
                     startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("física")){
-                    Toast.makeText(rascunhosActivity.this, "Esta seção ainda está a ser implementada",
-                            Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(rascunhosActivity.this, fisicaActivity.class);
+                    startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("geografia")){
                     Intent intent = new Intent(rascunhosActivity.this, geografiaActivity.class);
                     startActivity(intent);
@@ -49,14 +49,14 @@ public class rascunhosActivity extends AppCompatActivity {
                     Intent intent = new Intent(rascunhosActivity.this, matematicaActivity.class);
                     startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("português")){
-                    Toast.makeText(rascunhosActivity.this, "Esta seção ainda está a ser implementada",
-                            Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(rascunhosActivity.this, portuguesActivity.class);
+                    startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("redação")){
                     Toast.makeText(rascunhosActivity.this, "Esta seção ainda está a ser implementada",
                             Toast.LENGTH_LONG).show();
                 }else if(campos[position].equalsIgnoreCase("química")){
-                    Toast.makeText(rascunhosActivity.this, "Esta seção ainda está a ser implementada",
-                            Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(rascunhosActivity.this, quimicaActivity.class);
+                    startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("sociologia")){
                     Intent intent = new Intent(rascunhosActivity.this, sociologiaActivity.class);
                     startActivity(intent);

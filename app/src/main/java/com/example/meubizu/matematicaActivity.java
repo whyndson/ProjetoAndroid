@@ -12,6 +12,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class matematicaActivity extends AppCompatActivity {
 
     private static final String[] campos = {"Geometria","Aritmética","Razões","Funções","Porcentagem"};
@@ -45,6 +47,17 @@ public class matematicaActivity extends AppCompatActivity {
                     Intent intent = new Intent(getBaseContext(), porcentagemActivity.class);
                     startActivity(intent);
                 }
+            }
+        });
+
+
+        FloatingActionButton fbutton = findViewById(R.id.activity_matematica_floating_action_button);
+        fbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(matematicaActivity.this,
+                        FormularioActivity.class);
+                startActivity(intent);
             }
         });
 

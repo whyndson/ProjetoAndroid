@@ -12,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".rascunhosActivity"/>
         <activity android:name=".geografiaActivity"/>
         <activity android:name=".historiaActivity"/>
@@ -20,13 +21,26 @@
         <activity android:name=".linguagensActivity" />
         <activity android:name=".matematicaActivity" />
         <activity android:name=".agendaActivity" />
+
         <activity android:name=".mainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".aritmeticaActivity"/>
+        <activity android:name=".biologiaActivity"/>
+        <activity android:name=".espanholActivity"/>
+        <activity android:name=".fisicaActivity"/>
+        <activity android:name=".FormularioActivity"/>
+        <activity android:name=".funcoesActivity"/>
+        <activity android:name=".inglesActivity"/>
+        <activity android:name=".porcentagemActivity"/>
+        <activity android:name=".portuguesActivity"/>
+        <activity android:name=".quimicaActivity"/>
+        <activity android:name=".razoesActivity"/>
+        <activity android:name=".geometriaActivity"/>
     </application>
 
 </manifest>

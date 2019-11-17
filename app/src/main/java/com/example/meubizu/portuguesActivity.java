@@ -27,7 +27,7 @@ public class portuguesActivity extends AppCompatActivity {
         ListView listView = findViewById(R.id.portugues_list_view);
         listView.setAdapter(adapter);
 
-        FloatingActionButton fbutton = findViewById(R.id.floating_button);
+        FloatingActionButton fbutton = findViewById(R.id.activity_portugues_floating_action_button);
         fbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

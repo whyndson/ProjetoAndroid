@@ -27,7 +27,7 @@ public class porcentagemActivity extends AppCompatActivity {
         ListView listView = findViewById(R.id.porcentagem_list_view);
         listView.setAdapter(adapter);
 
-        FloatingActionButton fbutton = findViewById(R.id.floating_button);
+        FloatingActionButton fbutton = findViewById(R.id.activity_porcentagem_floating_action_button);
         fbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
