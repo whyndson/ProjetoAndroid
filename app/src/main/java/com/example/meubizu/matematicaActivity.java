@@ -2,17 +2,19 @@ package com.example.meubizu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
 public class matematicaActivity extends AppCompatActivity {
 
-    private static final String[] campos = {"Conjuntos", "Função Afim","Função Quadrática",
-            "Trigonometria","Geometria Espacial","Números Complexos"};
+    private static final String[] campos = {"Geometria","Aritmética","Razões","Funções","Porcentagem"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,29 @@ public class matematicaActivity extends AppCompatActivity {
 
         ListView listView = findViewById(R.id.list_view_matematica);
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                if(campos[position].equalsIgnoreCase("Geometria")){
+                    Intent intent = new Intent(getBaseContext(), geometriaActivity.class);
+                    startActivity(intent);
+                }else if(campos[position].equalsIgnoreCase("Aritmética")){
+                    Intent intent = new Intent(getBaseContext(), aritmeticaActivity.class);
+                    startActivity(intent);
+                }else if(campos[position].equalsIgnoreCase("Razões")){
+                    Intent intent = new Intent(getBaseContext(), razoesActivity.class);
+                    startActivity(intent);
+                }else if(campos[position].equalsIgnoreCase("Funções")){
+                    Intent intent = new Intent(getBaseContext(), funcoesActivity.class);
+                    startActivity(intent);
+                }else if(campos[position].equalsIgnoreCase("Porcentagem")){
+                    Intent intent = new Intent(getBaseContext(), porcentagemActivity.class);
+                    startActivity(intent);
+                }
+            }
+        });
+
     }
 
     @Override

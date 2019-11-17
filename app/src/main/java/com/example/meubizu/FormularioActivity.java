@@ -1,27 +1,26 @@
 package com.example.meubizu;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.os.Bundle;
+
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
-public class cienciashumanasActivity extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
 
-    private static final String[] campos = {"Filosofia", "Geografia", "História", "Sociologia"};
+import com.example.meubizu.R;
+
+public class FormularioActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ciencias_humanas);
+        setContentView(R.layout.activity_formulario);
 
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, campos);
-
-        ListView listView = findViewById(R.id.ciencias_humanas_list_view);
-        listView.setAdapter(adapter);
     }
 
     @Override
@@ -29,6 +28,7 @@ public class cienciashumanasActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.options_menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -49,4 +49,7 @@ public class cienciashumanasActivity extends AppCompatActivity {
         super.onBackPressed();
         finish();
     }
+
+
 }
+

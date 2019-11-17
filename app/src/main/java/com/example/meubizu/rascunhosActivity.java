@@ -14,8 +14,8 @@ import android.widget.Toast;
 
 public class rascunhosActivity extends AppCompatActivity {
 
-    private static final String[] campos = {"Ciências humanas", "Ciências da Natureza", "Linguagens",
-            "Matemática", "Redação"};
+    private static final String[] campos = {"Biologia", "Filosofia", "Física", "Geografia",
+            "História", "Matemática", "Português","Redação", "Química", "Sociologia"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,21 +30,36 @@ public class rascunhosActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                if(campos[position].equalsIgnoreCase("ciências humanas")){
-                    Intent intent = new Intent(getBaseContext(), cienciashumanasActivity.class);
+                if(campos[position].equalsIgnoreCase("biologia")){
+                    Toast.makeText(rascunhosActivity.this, "Esta seção ainda está a ser implementada",
+                            Toast.LENGTH_LONG).show();
+                }else if(campos[position].equalsIgnoreCase("filosofia")){
+                    Intent intent = new Intent(rascunhosActivity.this, filosofiaActivity.class);
                     startActivity(intent);
-                }else if(campos[position].equalsIgnoreCase("ciências da natureza")){
-                    Intent intent = new Intent(getBaseContext(), cienciasnaturezaActivity.class);
+                }else if(campos[position].equalsIgnoreCase("física")){
+                    Toast.makeText(rascunhosActivity.this, "Esta seção ainda está a ser implementada",
+                            Toast.LENGTH_LONG).show();
+                }else if(campos[position].equalsIgnoreCase("geografia")){
+                    Intent intent = new Intent(rascunhosActivity.this, geografiaActivity.class);
                     startActivity(intent);
-                }else if(campos[position].equalsIgnoreCase("linguagens")){
-                    Intent intent = new Intent(getBaseContext(), linguagensActivity.class);
+                }else if(campos[position].equalsIgnoreCase("história")){
+                    Intent intent = new Intent(rascunhosActivity.this, historiaActivity.class);
                     startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("matemática")){
-                    Intent intent = new Intent(getBaseContext(), matematicaActivity.class);
+                    Intent intent = new Intent(rascunhosActivity.this, matematicaActivity.class);
                     startActivity(intent);
-                }else if(campos[position].equalsIgnoreCase("redação")){
-                    Toast.makeText(getBaseContext(), "Esta seção ainda está a ser implementada",
+                }else if(campos[position].equalsIgnoreCase("português")){
+                    Toast.makeText(rascunhosActivity.this, "Esta seção ainda está a ser implementada",
                             Toast.LENGTH_LONG).show();
+                }else if(campos[position].equalsIgnoreCase("redação")){
+                    Toast.makeText(rascunhosActivity.this, "Esta seção ainda está a ser implementada",
+                            Toast.LENGTH_LONG).show();
+                }else if(campos[position].equalsIgnoreCase("química")){
+                    Toast.makeText(rascunhosActivity.this, "Esta seção ainda está a ser implementada",
+                            Toast.LENGTH_LONG).show();
+                }else if(campos[position].equalsIgnoreCase("sociologia")){
+                    Intent intent = new Intent(rascunhosActivity.this, sociologiaActivity.class);
+                    startActivity(intent);
                 }
             }
         });

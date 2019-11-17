@@ -12,9 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".rascunhosActivity"></activity>
-        <activity android:name=".cienciasnaturezaActivity" />
-        <activity android:name=".cienciashumanasActivity" />
+        <activity android:name=".rascunhosActivity"/>
+        <activity android:name=".geografiaActivity"/>
+        <activity android:name=".historiaActivity"/>
+        <activity android:name=".filosofiaActivity"/>
+        <activity android:name=".sociologiaActivity"/>
         <activity android:name=".linguagensActivity" />
         <activity android:name=".matematicaActivity" />
         <activity android:name=".agendaActivity" />
