@@ -14,8 +14,8 @@ import android.widget.Toast;
 
 public class rascunhosActivity extends AppCompatActivity {
 
-    private static final String[] campos = {"Biologia", "Filosofia", "Física", "Geografia",
-            "História", "Matemática", "Português","Redação", "Química", "Sociologia"};
+    private static final String[] campos = {"Biologia", "Espanhol", "Filosofia", "Física", "Geografia",
+            "História", "Inglês", "Matemática", "Português","Redação", "Química", "Sociologia"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,9 @@ public class rascunhosActivity extends AppCompatActivity {
                 if(campos[position].equalsIgnoreCase("biologia")){
                     Intent intent = new Intent(rascunhosActivity.this, biologiaActivity.class);
                     startActivity(intent);
+                }if(campos[position].equalsIgnoreCase("espanhol")){
+                    Intent intent = new Intent(rascunhosActivity.this, espanholActivity.class);
+                    startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("filosofia")){
                     Intent intent = new Intent(rascunhosActivity.this, filosofiaActivity.class);
                     startActivity(intent);
@@ -44,6 +47,9 @@ public class rascunhosActivity extends AppCompatActivity {
                     startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("história")){
                     Intent intent = new Intent(rascunhosActivity.this, historiaActivity.class);
+                    startActivity(intent);
+                }else if(campos[position].equalsIgnoreCase("inglês")){
+                    Intent intent = new Intent(rascunhosActivity.this, inglesActivity.class);
                     startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("matemática")){
                     Intent intent = new Intent(rascunhosActivity.this, matematicaActivity.class);
@@ -60,7 +66,14 @@ public class rascunhosActivity extends AppCompatActivity {
                 }else if(campos[position].equalsIgnoreCase("sociologia")){
                     Intent intent = new Intent(rascunhosActivity.this, sociologiaActivity.class);
                     startActivity(intent);
+                }else if(campos[position].equalsIgnoreCase("espanhol")){
+                    Intent intent = new Intent(rascunhosActivity.this, espanholActivity.class);
+                    startActivity(intent);
+                }else if(campos[position].equalsIgnoreCase("sociologia")){
+                    Intent intent = new Intent(rascunhosActivity.this, inglesActivity.class);
+                    startActivity(intent);
                 }
+
             }
         });
     }
@@ -78,8 +91,9 @@ public class rascunhosActivity extends AppCompatActivity {
                 Toast.makeText(this, "Deus te abençoe!", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.direitos_autorais:
-                Toast.makeText(this, "Esta seção ainda será implementada",
-                        Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(rascunhosActivity.this,
+                        direitosAutoraisActivity.class);
+                startActivity(intent);
                 break;
         }
 

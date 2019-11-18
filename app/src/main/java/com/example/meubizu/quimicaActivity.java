@@ -32,7 +32,7 @@ public class quimicaActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(quimicaActivity.this,
-                        FormularioActivity.class);
+                        formularioActivity.class);
                 startActivity(intent);
             }
         });
@@ -50,8 +50,9 @@ public class quimicaActivity extends AppCompatActivity {
                 Toast.makeText(this, "Deus te abençoe!", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.direitos_autorais:
-                Toast.makeText(this, "Esta seção ainda será implementada",
-                        Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(quimicaActivity.this,
+                        direitosAutoraisActivity.class);
+                startActivity(intent);
                 break;
         }
 

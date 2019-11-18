@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.meubizu.R;
 
-public class FormularioActivity extends AppCompatActivity {
+public class formularioActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +36,9 @@ public class FormularioActivity extends AppCompatActivity {
                 Toast.makeText(this, "Deus te abençoe!", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.direitos_autorais:
-                Toast.makeText(this, "Esta seção ainda será implementada",
-                        Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(formularioActivity.this,
+                        direitosAutoraisActivity.class);
+                startActivity(intent);
                 break;
         }
 

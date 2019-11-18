@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".direitosAutoraisActivity">
+
+
+    <TextView
+        android:id="@+id/titulo_direitos_autorais"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Direitos autorais"
+        />
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll_direitos_autorais"
+        >
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+
+            <TextView
+            android:id="@+id/text_direitos_autorais_descricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="O projeto foi desenvolvido por alunos do 4° ano vespertino do curso de informática do Instituto Federal de Alagoas [IFAL] - Campus Arapiraca - turma (2016-2019). O aplicativo surge do ímpeto de suprir a necessidade estundatil de organizar seus estudos. Partindo desta premissa, a aplicação agrupa resumos e outros elementos do estudo do usuário, de forma sistemática e concisa. Fornecendo um panorama simples e eficaz, MeuBizu aumenta exponencialmente a produtividade de quem utiliza-o. " />
+
+            <TextView
+            android:id="@+id/text_direitos_autorais_integrantes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Desenvolvedores" />
+
+
+            <TextView
+            android:id="@+id/text_direitos_autorais_integrantes1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Filipe de Barros Souza" />
+
+            <ImageView
+            android:id="@+id/img_filipe"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@mipmap/filipe"
+            android:layout_marginTop="5dp"
+               />
+
+            <TextView
+            android:id="@+id/text_direitos_autorais_integrantes2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Karoline Magalhães" />
+
+            <ImageView
+            android:id="@+id/img_karol"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@mipmap/karol"
+            android:layout_marginTop="5dp"/>
+
+            <TextView
+            android:id="@+id/text_direitos_autorais_integrantes3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Lucas Whyndson" />
+
+            <ImageView
+            android:id="@+id/img_lucas"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@mipmap/lucas"
+            android:layout_marginTop="5dp"/>
+
+            <TextView
+            android:id="@+id/text_direitos_autorais_integrantes4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Matheus de Almeida Souza" />
+
+            <ImageView
+            android:id="@+id/img_matheus"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@mipmap/matheus"
+            android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

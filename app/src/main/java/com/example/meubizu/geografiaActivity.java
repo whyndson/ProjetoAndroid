@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -25,17 +23,17 @@ public class geografiaActivity extends AppCompatActivity {
         /*ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1);
 
         ListView listView = findViewById(R.id.geografia_list_view);
-        listView.setAdapter(adapter);
+        listView.setAdapter(adapter);*/
 
-        FloatingActionButton fbutton = findViewById(R.id.activity_geografia_fab);
+        FloatingActionButton fbutton = findViewById(R.id.activity_geografia_floating_action_button);
         fbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(geografiaActivity.this,
-                        FormularioActivity.class);
+                        formularioActivity.class);
                 startActivity(intent);
             }
-        });*/
+        });
     }
 
     @Override
@@ -50,8 +48,9 @@ public class geografiaActivity extends AppCompatActivity {
                 Toast.makeText(this, "Deus te abençoe!", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.direitos_autorais:
-                Toast.makeText(this, "Esta seção ainda será implementada",
-                        Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(geografiaActivity.this,
+                        direitosAutoraisActivity.class);
+                startActivity(intent);
                 break;
         }
 

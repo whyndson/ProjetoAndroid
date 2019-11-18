@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -16,47 +15,22 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class matematicaActivity extends AppCompatActivity {
 
-    private static final String[] campos = {"Geometria","Aritmética","Razões","Funções","Porcentagem"};
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_matematica);
 
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, campos);
+        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1);
 
         ListView listView = findViewById(R.id.list_view_matematica);
         listView.setAdapter(adapter);
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                if(campos[position].equalsIgnoreCase("Geometria")){
-                    Intent intent = new Intent(getBaseContext(), geometriaActivity.class);
-                    startActivity(intent);
-                }else if(campos[position].equalsIgnoreCase("Aritmética")){
-                    Intent intent = new Intent(getBaseContext(), aritmeticaActivity.class);
-                    startActivity(intent);
-                }else if(campos[position].equalsIgnoreCase("Razões")){
-                    Intent intent = new Intent(getBaseContext(), razoesActivity.class);
-                    startActivity(intent);
-                }else if(campos[position].equalsIgnoreCase("Funções")){
-                    Intent intent = new Intent(getBaseContext(), funcoesActivity.class);
-                    startActivity(intent);
-                }else if(campos[position].equalsIgnoreCase("Porcentagem")){
-                    Intent intent = new Intent(getBaseContext(), porcentagemActivity.class);
-                    startActivity(intent);
-                }
-            }
-        });
-
 
         FloatingActionButton fbutton = findViewById(R.id.activity_matematica_floating_action_button);
         fbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(matematicaActivity.this,
-                        FormularioActivity.class);
+                        formularioActivity.class);
                 startActivity(intent);
             }
         });
@@ -76,8 +50,9 @@ public class matematicaActivity extends AppCompatActivity {
                 Toast.makeText(this, "Deus te abençoe!", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.direitos_autorais:
-                Toast.makeText(this, "Esta seção ainda será implementada",
-                        Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(matematicaActivity.this,
+                        direitosAutoraisActivity.class);
+                startActivity(intent);
                 break;
         }
 

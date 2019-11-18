@@ -65,9 +65,9 @@ public class mainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Deus te abençoe!", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.direitos_autorais:
-                Toast.makeText(this, "Esta seção ainda será implementada",
-                        Toast.LENGTH_SHORT).show();
-                break;
+                Intent intent = new Intent(mainActivity.this,
+                        direitosAutoraisActivity.class);
+                startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);

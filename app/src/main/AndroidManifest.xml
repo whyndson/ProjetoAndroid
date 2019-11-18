@@ -29,18 +29,15 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".aritmeticaActivity"/>
         <activity android:name=".biologiaActivity"/>
         <activity android:name=".espanholActivity"/>
         <activity android:name=".fisicaActivity"/>
-        <activity android:name=".FormularioActivity"/>
-        <activity android:name=".funcoesActivity"/>
+        <activity android:name=".formularioActivity"/>
         <activity android:name=".inglesActivity"/>
-        <activity android:name=".porcentagemActivity"/>
         <activity android:name=".portuguesActivity"/>
         <activity android:name=".quimicaActivity"/>
-        <activity android:name=".razoesActivity"/>
-        <activity android:name=".geometriaActivity"/>
+        <activity android:name=".direitosAutoraisActivity"/>
+
     </application>
 
 </manifest>
