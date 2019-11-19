@@ -36,8 +36,8 @@ public class mainActivity extends AppCompatActivity {
                     Intent intent = new Intent(mainActivity.this, agendaActivity.class);
                     startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("cronograma")){
-                    Toast.makeText(mainActivity.this, "Esta seção ainda será implementada",
-                            Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(mainActivity.this, cronogramaActivity.class);
+                    startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("mapa")){
                     Toast.makeText(mainActivity.this, "Esta seção ainda será implementada",
                             Toast.LENGTH_SHORT).show();

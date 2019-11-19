@@ -7,14 +7,12 @@
     android:orientation="vertical"
     tools:context=".direitosAutoraisActivity">
 
-
     <TextView
         android:id="@+id/titulo_direitos_autorais"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Direitos autorais"
         />
-
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"

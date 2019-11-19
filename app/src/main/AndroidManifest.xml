@@ -37,6 +37,9 @@
         <activity android:name=".portuguesActivity"/>
         <activity android:name=".quimicaActivity"/>
         <activity android:name=".direitosAutoraisActivity"/>
+        <activity android:name=".cronogramaActivity"/>
+        
+
 
     </application>
 

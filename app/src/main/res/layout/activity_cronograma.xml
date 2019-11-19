@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cronogramaActivity"
+    android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:background="#2f4f4f"
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+            android:text="Cronograma"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Domingo"
+        />
+
+        <EditText
+            android:id="@+id/edittext_domingo"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Segunda-feira"
+        />
+
+        <EditText
+            android:id="@+id/edittext_segunda"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Terça-feira"
+        />
+
+        <EditText
+            android:id="@+id/edittext_terça"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quarta-feira"
+        />
+
+        <EditText
+            android:id="@+id/edittext_quarta"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quinta-feira"
+        />
+
+        <EditText
+            android:id="@+id/edittext_quinta"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sexta-feira"
+        />
+
+        <EditText
+            android:id="@+id/edittext_sexta"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sábado"
+        />
+
+        <EditText
+            android:id="@+id/edittext_sabado"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+        />
+
+        <Button
+            android:id="@+id/button_salvar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salvar"
+        />
+        
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
