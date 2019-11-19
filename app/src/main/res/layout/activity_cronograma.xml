@@ -34,191 +34,168 @@
                 android:text="Domingo"
                 android:textColor="#3F51B5"
                 android:background="#4CAF50"
+                android:id="@+id/text1"
+                android:textSize="25dp"
                 />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:text="HORA"
-                android:textColor="#ff0000"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="MATÉRIA"
-                android:textColor="#ff0000"
-                />
-
             <EditText
-                android:id="@+id/edittext_domingo"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-
+                android:layout_height="wrap_content"
+                android:hint="HORA"
+                android:textColor="#ff0000"
+                android:id="@+id/edit_text1"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="MATÉRIA"
+                android:textColor="#ff0000"
+                android:id="@+id/edit_text2"
                 />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Segunda-feira"
+                android:text="Segunda"
                 android:textColor="#3F51B5"
                 android:background="#4CAF50"
+                android:id="@+id/text2"
+                android:textSize="25dp"
                 />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:text="HORA"
-                android:textColor="#ff0000"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="MATÉRIA"
-                android:textColor="#ff0000"
-                />
-
             <EditText
-                android:id="@+id/edittext_segunda"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="wrap_content"
+                android:hint="HORA"
+                android:textColor="#ff0000"
+                android:id="@+id/edit_text3"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="MATÉRIA"
+                android:textColor="#ff0000"
+                android:id="@+id/edit_text4"
                 />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Terça-feira"
+                android:text="Terça"
                 android:textColor="#3F51B5"
                 android:background="#4CAF50"
+                android:id="@+id/text3"
+                android:textSize="25dp"
                 />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:text="HORA"
-                android:textColor="#ff0000"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="MATÉRIA"
-                android:textColor="#ff0000"
-                />
-
             <EditText
-                android:id="@+id/edittext_terça"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="wrap_content"
+                android:hint="HORA"
+                android:textColor="#ff0000"
+                android:id="@+id/edit_text5"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="MATÉRIA"
+                android:textColor="#ff0000"
+                android:id="@+id/edit_text6"
                 />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Quarta-feira"
+                android:text="Quarta"
                 android:textColor="#3F51B5"
                 android:background="#4CAF50"
+                android:id="@+id/text4"
+                android:textSize="25dp"
                 />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:text="HORA"
-                android:textColor="#ff0000"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="MATÉRIA"
-                android:textColor="#ff0000"
-                />
-
             <EditText
-                android:id="@+id/edittext_quarta"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="wrap_content"
+                android:hint="HORA"
+                android:textColor="#ff0000"
+                android:id="@+id/edit_text7"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="MATÉRIA"
+                android:textColor="#ff0000"
+                android:id="@+id/edit_text8"
                 />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Quinta-feira"
+                android:text="Quinta"
                 android:textColor="#3F51B5"
                 android:background="#4CAF50"
+                android:id="@+id/text5"
+                android:textSize="25dp"
                 />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:text="HORA"
-                android:textColor="#ff0000"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="MATÉRIA"
-                android:textColor="#ff0000"
-                />
-
             <EditText
-                android:id="@+id/edittext_quinta"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="wrap_content"
+                android:hint="HORA"
+                android:textColor="#ff0000"
+                android:id="@+id/edit_text9"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="MATÉRIA"
+                android:textColor="#ff0000"
+                android:id="@+id/edit_text10"
                 />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Sexta-feira"
+                android:text="Sexta"
                 android:textColor="#3F51B5"
                 android:background="#4CAF50"
+                android:id="@+id/text6"
+                android:textSize="25dp"
                 />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:text="HORA"
-                android:textColor="#ff0000"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="MATÉRIA"
-                android:textColor="#ff0000"
-                />
-
             <EditText
-                android:id="@+id/edittext_sexta"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="wrap_content"
+                android:hint="HORA"
+                android:textColor="#ff0000"
+                android:id="@+id/edit_text11"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="MATÉRIA"
+                android:textColor="#ff0000"
+                android:id="@+id/edit_text12"
                 />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Sábado"
-                android:background="#4CAF50"
-                />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:text="HORA"
                 android:textColor="#3F51B5"
                 android:background="#4CAF50"
+                android:id="@+id/text7"
+                android:textSize="25dp"
                 />
-            <TextView
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"
-                android:text="HORA"
+                android:hint="HORA"
                 android:textColor="#ff0000"
+                android:id="@+id/edit_text13"
                 />
-            <TextView
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="MATÉRIA"
+                android:hint="MATÉRIA"
                 android:textColor="#ff0000"
+                android:id="@+id/edit_text14"
                 />
+
 
             <Button
                 android:id="@+id/button_salvar"
@@ -226,8 +203,6 @@
                 android:layout_height="wrap_content"
                 android:text="Salvar"
                 android:background="#E91E63"
-                
-
                 />
 
         </LinearLayout>
