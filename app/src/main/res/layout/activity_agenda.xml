@@ -7,10 +7,6 @@
     android:orientation="vertical"
     tools:context=".agendaActivity">
 
-    <CalendarView
-        android:id="@+id/simpleCalendarView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/activity_agenda_floating_action_button"

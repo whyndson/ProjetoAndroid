@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".acontecimentoAgendaActivity"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp">
+
+        <CalendarView
+            android:id="@+id/simpleCalendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edittext_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DATA"
+            android:inputType="date" />
+
+        />
+
+        <EditText
+            android:id="@+id/edittext_hora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="HORA"
+            android:inputType="number"
+            />
+
+        <EditText
+            android:id="@+id/edittext_descc"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:hint="DESCRIÇÃO"
+            />
+
+
+        <Button
+            android:id="@+id/button_enviar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="ENVIAR ACONTECIMENTO"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
