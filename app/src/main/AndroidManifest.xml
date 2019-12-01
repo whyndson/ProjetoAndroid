@@ -12,49 +12,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".acontecimentoAgendaActivity"
-            android:parentActivityName=".agendaActivity"></activity>
-        <activity android:name=".rascunhosActivity"
-            android:parentActivityName=".mainActivity" />
-        <activity android:name=".geografiaActivity"
-            android:parentActivityName=".rascunhosActivity"/>
-        <activity android:name=".historiaActivity"
-            android:parentActivityName=".rascunhosActivity"/>
-        <activity android:name=".filosofiaActivity"
-            android:parentActivityName=".filosofiaActivity"/>
-        <activity android:name=".sociologiaActivity"
-            android:parentActivityName=".rascunhosActivity"/>
-        <activity android:name=".linguagensActivity"
-            android:parentActivityName=".rascunhosActivity" />
-        <activity android:name=".matematicaActivity"
-            android:parentActivityName=".rascunhosActivity"/>
-        <activity android:name=".agendaActivity"
-            android:parentActivityName=".mainActivity"/>
-        <activity android:name=".mainActivity">
+        <activity android:name=".view.resumosActivity"></activity>
+        <activity android:name=".view.ajudaActivity" />
+        <activity android:name=".view.materiaActivity" />
+        <activity
+            android:name=".view.acontecimentoAgendaActivity"
+            android:parentActivityName=".view.agendaActivity" />
+
+        <activity android:name=".view.rascunhosActivity" />
+
+        <activity
+            android:name=".view.agendaActivity"
+            android:parentActivityName=".view.mainActivity" />
+        <activity android:name=".view.mainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".biologiaActivity"
-            android:parentActivityName=".rascunhosActivity"/>
-        <activity android:name=".espanholActivity"
-            android:parentActivityName=".rascunhosActivity"/>
-        <activity android:name=".fisicaActivity"
-            android:parentActivityName=".rascunhosActivity"/>
-        <activity android:name=".formularioActivity"
-            android:parentActivityName=".rascunhosActivity"/>
-        <activity android:name=".inglesActivity"
-            android:parentActivityName=".rascunhosActivity"/>
-        <activity android:name=".portuguesActivity"
-            android:parentActivityName=".rascunhosActivity"/>
-        <activity android:name=".quimicaActivity"
-            android:parentActivityName=".rascunhosActivity"/>
-        <activity android:name=".direitosAutoraisActivity"
-            android:parentActivityName=".mainActivity"/>
-        <activity android:name=".cronogramaActivity"
-            android:parentActivityName=".mainActivity"/>
+
+        <activity android:name=".view.formularioActivity" />
+
+        <activity
+            android:name=".view.direitosAutoraisActivity"
+            android:parentActivityName=".view.mainActivity" />
+
+        <activity
+            android:name=".view.cronogramaActivity"
+            android:parentActivityName=".view.mainActivity" />
+
     </application>
 
 </manifest>

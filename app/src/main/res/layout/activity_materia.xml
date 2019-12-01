@@ -4,12 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".view.agendaActivity">
+    tools:context=".view.materiaActivity">
 
+    <TextView
+        android:id="@+id/activity_materia_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:background="#2f4f4f"
+        android:textSize="30dp"
+        android:textColor="#ffffff"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/activity_agenda_floating_action_button"
+        android:id="@+id/activity_materia_floating_action_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"

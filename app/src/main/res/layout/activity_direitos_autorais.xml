@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".direitosAutoraisActivity">
+
+    tools:context=".view.direitosAutoraisActivity">
 
     <TextView
         android:id="@+id/titulo_direitos_autorais"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Direitos autorais"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
         />
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
@@ -24,12 +29,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="30dp">
+            android:padding="10sp">
 
             <TextView
             android:id="@+id/text_direitos_autorais_descricao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
             android:text="O projeto foi desenvolvido por alunos do 4° ano vespertino do curso de informática do Instituto Federal de Alagoas [IFAL] - Campus Arapiraca - turma (2016-2019). O aplicativo surge do ímpeto de suprir a necessidade estundatil de organizar seus estudos. Partindo desta premissa, a aplicação agrupa resumos e outros elementos do estudo do usuário, de forma sistemática e concisa. Fornecendo um panorama simples e eficaz, MeuBizu aumenta exponencialmente a produtividade de quem utiliza-o. " />
 
             <TextView
@@ -37,15 +43,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
             android:text="Desenvolvedores" />
 
 
-            <TextView
-            android:id="@+id/text_direitos_autorais_integrantes1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Filipe de Barros Souza" />
+
 
             <ImageView
             android:id="@+id/img_filipe"
@@ -56,11 +60,12 @@
                />
 
             <TextView
-            android:id="@+id/text_direitos_autorais_integrantes2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Karoline Magalhães" />
+                android:id="@+id/text_direitos_autorais_integrantes1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:text="Filipe de Barros Souza" />
 
             <ImageView
             android:id="@+id/img_karol"
@@ -70,11 +75,14 @@
             android:layout_marginTop="5dp"/>
 
             <TextView
-            android:id="@+id/text_direitos_autorais_integrantes3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Lucas Whyndson" />
+                android:id="@+id/text_direitos_autorais_integrantes2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:text="Karoline Magalhães" />
+
+
 
             <ImageView
             android:id="@+id/img_lucas"
@@ -84,11 +92,12 @@
             android:layout_marginTop="5dp"/>
 
             <TextView
-            android:id="@+id/text_direitos_autorais_integrantes4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Matheus de Almeida Souza" />
+                android:id="@+id/text_direitos_autorais_integrantes3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:text="Lucas Whyndson" />
 
             <ImageView
             android:id="@+id/img_matheus"
@@ -96,6 +105,13 @@
             android:layout_height="250dp"
             android:src="@mipmap/matheus"
             android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/text_direitos_autorais_integrantes4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Matheus de Almeida Souza" />
 
         </LinearLayout>
 
