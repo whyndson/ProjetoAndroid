@@ -13,6 +13,11 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.meubizu.R;
+import com.example.meubizu.banco.RascunhosDAO;
+import com.example.meubizu.model.Materia;
+import com.example.meubizu.model.Rascunho;
+
+import java.util.ArrayList;
 
 public class rascunhosActivity extends AppCompatActivity {
 
@@ -25,11 +30,11 @@ public class rascunhosActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rascunhos);
 
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1,
-                campos);
+        ArrayAdapter adapter = new MateriaAdapter(getBaseContext(),generateList());
 
         ListView listView = findViewById(R.id.activity_rascunhos_list_view);
         listView.setAdapter(adapter);
+
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -107,6 +112,14 @@ public class rascunhosActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private ArrayList<Materia> generateList(){
+        ArrayList<Materia> materias = new ArrayList<>();
+        for(int i = 0; i < campos.length; i++){
+            materias.add(new Materia(campos[i]));
+        }
+        return materias;
     }
 
     @Override

@@ -5,16 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.materiaActivity">
-
-    <TextView
-        android:id="@+id/activity_materia_text_view"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:gravity="center"
-        android:background="#2f4f4f"
-        android:textSize="30dp"
-        android:textColor="#ffffff"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/activity_materia_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:background="#2f4f4f"
+            android:textSize="30dp"
+            android:textColor="#ffffff"/>
+        <ListView
+            android:id="@+id/rascunhos_materia_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
 
+    </LinearLayout>
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/activity_materia_floating_action_button"
         android:layout_width="wrap_content"

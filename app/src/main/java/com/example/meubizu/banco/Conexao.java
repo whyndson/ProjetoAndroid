@@ -12,18 +12,20 @@ public class Conexao extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String SQL_TABLE_RESUMOS = "CREATE TABLE RESUMOS (" +
+        String SQL_TABLE_RASCUNHOS = "CREATE TABLE RASCUNHOS (" +
                 "ID INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "TITULO TEXT NOT NULL," +
-                "TEXTO TEXT NOT NULL);";
+                "ID_MATERIA INTEGER NOT NULL," +
+                "DATA_CRIACAO TEXT NOT NULL," +
+                "DESCRICAO TEXT NOT NULL);";
 
-        db.execSQL(SQL_TABLE_RESUMOS);
+        db.execSQL(SQL_TABLE_RASCUNHOS);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        String SQL_TABLE_RESUMOS = "DROP TABLE IF EXISTS RESUMOS";
-        db.execSQL(SQL_TABLE_RESUMOS);
+        String SQL_TABLE_RASCUNHOS = "DROP TABLE IF EXISTS RASCUNHOS";
+        db.execSQL(SQL_TABLE_RASCUNHOS);
         onCreate(db);
     }
 }

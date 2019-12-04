@@ -12,9 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.resumosActivity"></activity>
         <activity android:name=".view.ajudaActivity" />
-        <activity android:name=".view.materiaActivity" />
+        <activity android:name=".view.materiaActivity" android:theme="@style/FullScreenWithTopBar"/>
         <activity
             android:name=".view.acontecimentoAgendaActivity"
             android:parentActivityName=".view.agendaActivity" />
@@ -40,6 +39,8 @@
         <activity
             android:name=".view.cronogramaActivity"
             android:parentActivityName=".view.mainActivity" />
+
+        <activity android:name=".view.RascunhoActivity" />
 
     </application>
 

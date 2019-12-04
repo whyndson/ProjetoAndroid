@@ -2,10 +2,12 @@ package com.example.meubizu.model;
 
 public class Materia {
 
-    private int id;
+    private long id;
     private String nome;
 
-    public Materia() {
+    public Materia(String nome) {
+        this.nome = nome;
+        this.id = Rascunho.getIdDeUmaMateria(nome);
     }
 
     public Materia(int id, String nome) {
@@ -13,7 +15,7 @@ public class Materia {
         this.nome = nome;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 

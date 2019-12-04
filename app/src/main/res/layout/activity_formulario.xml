@@ -30,15 +30,15 @@
             android:hint="Descrição"
             />
 
-         <Button
+        <Button
             android:id="@+id/button_selecionar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Selecionar arquivo"
             />
-   
 
-          <Button
+
+        <Button
             android:id="@+id/button_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
