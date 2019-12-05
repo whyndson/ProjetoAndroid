@@ -4,6 +4,8 @@
     package="com.example.meubizu">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
 
     <application
         android:allowBackup="true"
@@ -44,6 +46,14 @@
             android:name=".view.cronogramaActivity"
             android:parentActivityName=".view.mainActivity" />
         <activity android:name=".view.RascunhoActivity" />
+
+        <receiver android:name=".view.InicioActivityBroadcast">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
     </application>
 
     <dist:module dist:instant="true" />

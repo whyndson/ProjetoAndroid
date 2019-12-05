@@ -27,7 +27,6 @@ public class ComentarioDAO {
         db.close();
     }
 
-
     public ArrayList<Comentario> listarComentarios() {
         ArrayList<Comentario> list = new ArrayList<>();
 
@@ -52,7 +51,6 @@ public class ComentarioDAO {
 
         return list;
     }
-
   
     public void atualizar(Comentario comentario) {
         SQLiteDatabase db = conn.getWritableDatabase();

@@ -1,4 +1,4 @@
-#Thu Dec 05 14:00:46 GFT 2019
-base.0=C\:\\Users\\TEMP.DESKTOP-3EJ4NSL.000.001\\Desktop\\matheusProjetoAndroid\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+#Thu Dec 05 15:08:09 BRST 2019
+base.0=C\:\\Users\\SUPORTE\\Documents\\ProjetoAndroid-master\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
