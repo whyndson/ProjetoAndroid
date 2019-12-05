@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp">
+
+
+        <TextView
+            android:id="@+id/textview_comentarios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preencha os dados pessoais abaixo e deixe seu comentário. É de suma importância para nós, desenvolvedores do MeuBizu, a sabermos o feedback obtido de nosso produto. Desta forma você estará contribuindo para uma otimização constante de nossas funcionalidades, atendendo cada vez melhor suas necessidades."
+            />
+
+        <EditText
+            android:id="@+id/edittext_comentario_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NOME"
+            />
+
+        <EditText
+            android:id="@+id/edittext_cep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CEP"
+            />
+        <Button
+            android:id="@+id/butao_buscar_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BUSCAR"
+            />
+        <EditText
+            android:id="@+id/edittext_cidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CIDADE"
+            />
+
+        <EditText
+            android:id="@+id/edittext_estado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ESTADO"
+            />
+
+        <EditText
+            android:id="@+id/edittext_conteudo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DEIXE AQUI SEU COMENTÁRIO"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/butao_adicionar_comentarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENVIAR COMENTÁRIO"
+        />
+
+</LinearLayout>

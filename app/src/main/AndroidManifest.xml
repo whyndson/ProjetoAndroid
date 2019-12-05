@@ -3,6 +3,8 @@
     xmlns:dist="http://schemas.android.com/apk/distribution"
     package="com.example.meubizu">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -32,6 +34,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".view.mainActivity" />
+        <activity android:name=".view.AdicionarComentarioActivity" />
+        <activity android:name=".view.ListaComentariosActivity" />
         <activity android:name=".view.formularioActivity" />
         <activity
             android:name=".view.direitosAutoraisActivity"

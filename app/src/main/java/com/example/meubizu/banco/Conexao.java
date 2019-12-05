@@ -25,9 +25,15 @@ public class Conexao extends SQLiteOpenHelper {
                 "HORA TEXT NOT NULL,"+
                 "DESCRICAO TEXT NOT NULL);";
 
+        String SQL_TABLE_COMENTARIOS = "CREATE TABLE COMENTARIO (ID INTEGER PRIMARY KEY, NOME TEXT NOT NULL, " +
+                "CEP TEXT NOT NULL, CIDADE TEXT NOT NULL, ESTADO TEXT NOT NULL, " +
+                "CONTEUDO TEXT NOT NULL);";
+        
 
         db.execSQL(SQL_TABLE_RASCUNHOS);
         db.execSQL(SQL_TABLE_AGENDA);
+        db.execSQL(SQL_TABLE_COMENTARIOS);
+
     }
 
 
@@ -38,6 +44,9 @@ public class Conexao extends SQLiteOpenHelper {
 
         String SQL_TABLE_AGENDA = "DROP TABLE IF EXISTS AGENDA";
         db.execSQL(SQL_TABLE_AGENDA);
+
+        String SQL_TABLE_COMENTARIOS = "DROP TABLE IF EXISTS COMENTARIO";
+        db.execSQL(SQL_TABLE_COMENTARIOS);
 
         onCreate(db);
     }

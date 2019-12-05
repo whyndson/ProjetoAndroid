@@ -17,7 +17,7 @@ import com.example.meubizu.R;
 public class mainActivity extends AppCompatActivity {
 
     private static final String[] campos = {"Agenda", "Cronograma",
-            "Mapa", "Rascunhos"};
+            "Mapa", "Rascunhos", "Comentários"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +45,9 @@ public class mainActivity extends AppCompatActivity {
                             Toast.LENGTH_SHORT).show();
                 }else if(campos[position].equalsIgnoreCase("rascunhos")){
                     Intent intent = new Intent(mainActivity.this, rascunhosActivity.class);
+                    startActivity(intent);
+                }else if(campos[position].equalsIgnoreCase("comentários")){
+                    Intent intent = new Intent(mainActivity.this, ListaComentariosActivity.class);
                     startActivity(intent);
                 }
             }
