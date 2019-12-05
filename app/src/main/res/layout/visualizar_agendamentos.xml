@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15sp">
+
+    <TextView
+        android:id="@+id/visualizar_agendamento_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="30/12/2019"
+        android:textSize="40sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/visualizar_agendamento_hora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="14:40"
+        android:textSize="40sp"
+        android:textAlignment="center"/>
+
+
+    <TextView
+        android:id="@+id/visualizar_agendamento_descricao"
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="inherit"
+        android:text="Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur ut arcu ut dui vehicula tincidunt. Aenean vestibulum ante sed sapien interdum egestas. Proin eros tellus, maximus ut leo sed, posuere accumsan dolor. Etiam quis magna ornare, tristique ante nec, tincidunt dui. Nulla vel urna sem. Cras venenatis nisl tellus, vel gravida sapien convallis in. Aliquam ut cursus lectus, et sollicitudin sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin ac tempus lacus, vitae ultrices neque."/>
+
+</LinearLayout>

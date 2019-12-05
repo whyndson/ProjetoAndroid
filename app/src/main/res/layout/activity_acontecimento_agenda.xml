@@ -16,11 +16,6 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp">
 
-        <CalendarView
-            android:id="@+id/simpleCalendarView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
         <EditText
             android:id="@+id/edittext_data"
             android:layout_width="match_parent"

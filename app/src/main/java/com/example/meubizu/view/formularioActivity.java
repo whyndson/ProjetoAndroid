@@ -3,6 +3,7 @@ package com.example.meubizu.view;
 import android.content.Intent;
 import android.os.Bundle;
 
+import android.provider.MediaStore;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -12,13 +13,16 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.FileProvider;
 
+import com.example.meubizu.BuildConfig;
 import com.example.meubizu.R;
 import com.example.meubizu.banco.Conexao;
 import com.example.meubizu.banco.RascunhosDAO;
 import com.example.meubizu.model.Materia;
 import com.example.meubizu.model.Rascunho;
 
+import java.io.File;
 import java.util.Calendar;
 
 public class formularioActivity extends AppCompatActivity {
@@ -28,16 +32,40 @@ public class formularioActivity extends AppCompatActivity {
     private EditText titulo;
     private EditText descricao;
     private Rascunho rascunho;
+    private String caminhoFoto;
+    public static final int REQUEST_CODE_CAMERA = 123;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formulario);
 
+        Button btnfoto = findViewById(R.id.button_selecionar);
+        btnfoto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+
+                caminhoFoto = getExternalFilesDir(null) + "/" + System.currentTimeMillis() + ".jpg";
+                Toast.makeText(formularioActivity.this, caminhoFoto, Toast.LENGTH_SHORT).show();
+
+                File file = new File(caminhoFoto);
+                intent.putExtra(MediaStore.EXTRA_OUTPUT,
+                        FileProvider.getUriForFile(
+                                formularioActivity.this,
+                                BuildConfig.APPLICATION_ID + ".provider",
+                                file
+                        ));
+
+                startActivityForResult(intent, 123);
+
+            }
+        });
+
         ok = (Button) findViewById(R.id.button_form);
         titulo = (EditText) findViewById(R.id.edittext_nome);
         descricao = (EditText)findViewById(R.id.edittext_desc);
-
-
 
         Intent intent = getIntent();
 
@@ -52,8 +80,6 @@ public class formularioActivity extends AppCompatActivity {
                 ok.setText("EDITAR");
             }
         }
-
-
 
         ok.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,6 +120,7 @@ public class formularioActivity extends AppCompatActivity {
 
                         rascunho.setTitulo(titulo.getText().toString());
                         rascunho.setTexto(descricao.getText().toString());
+
                         RascunhosDAO rascunhosDAO = new RascunhosDAO(getBaseContext());
                         long id = rascunhosDAO.atualizarRascunho(rascunho);
                         Log.i("Data", id + "");
