@@ -14,6 +14,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <activity android:name=".view.CronogramaActivity"/>
+        <activity android:name=".view.FormularioCronogramaActivity"/>
+
+
+
         <activity android:name=".view.VisualizarAgendamento"></activity>
         <activity android:name=".view.AjudaActivity" />
         <activity
@@ -26,6 +32,7 @@
         <activity
             android:name=".view.AgendaActivity"
             android:parentActivityName=".view.MainActivity" />
+
         <activity
             android:name=".view.TelaAberturaActivity"
             android:theme="@style/FullScreenWithoutTopBar">
@@ -41,9 +48,6 @@
         <activity android:name=".view.FormularioActivity" />
         <activity
             android:name=".view.DireitosAutoraisActivity"
-            android:parentActivityName=".view.MainActivity" />
-        <activity
-            android:name=".view.CronogramaActivity"
             android:parentActivityName=".view.MainActivity" />
         <activity android:name=".view.RascunhoActivity"/>
 

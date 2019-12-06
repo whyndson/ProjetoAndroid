@@ -25,6 +25,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.meubizu.view.CronogramaActivity" />
+        <activity android:name="com.example.meubizu.view.FormularioCronogramaActivity" />
         <activity android:name="com.example.meubizu.view.VisualizarAgendamento" />
         <activity android:name="com.example.meubizu.view.AjudaActivity" />
         <activity
@@ -58,9 +60,6 @@
         <activity android:name="com.example.meubizu.view.FormularioActivity" />
         <activity
             android:name="com.example.meubizu.view.DireitosAutoraisActivity"
-            android:parentActivityName="com.example.meubizu.view.MainActivity" />
-        <activity
-            android:name="com.example.meubizu.view.CronogramaActivity"
             android:parentActivityName="com.example.meubizu.view.MainActivity" />
         <activity android:name="com.example.meubizu.view.RascunhoActivity" />
 

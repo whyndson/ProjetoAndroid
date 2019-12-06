@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10sp"
+    tools:context=".view.FormularioCronogramaActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar cronograma"
+        android:textSize="20sp"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/edittext_cod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="NÚMERO DA SEMANA"
+            />
+
+        <EditText
+            android:id="@+id/edittext_domingo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DESCRICAO-DOMINGO"
+            />
+
+
+        <EditText
+            android:id="@+id/edittext_segunda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DESCRICAO-SEGUNDA"
+            />
+
+        <EditText
+            android:id="@+id/edittext_terca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DESCRICAO-TERCA"
+            />
+
+
+        <EditText
+            android:id="@+id/edittext_quarta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DESCRICAO-QUARTA"
+            />
+
+        <EditText
+            android:id="@+id/edittext_quinta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DESCRICAO-QUINTA"
+            />
+
+
+        <EditText
+            android:id="@+id/edittext_sexta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DESCRICAO-SEXTA"
+            />
+        <EditText
+            android:id="@+id/edittext_sabado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DESCRICAO-SABADO"
+            />
+
+    <Button
+        android:id="@+id/button_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        />
+
+</LinearLayout>

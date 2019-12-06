@@ -1,4 +1,4 @@
-#Fri Dec 06 13:31:21 GFT 2019
+#Fri Dec 06 14:38:42 GFT 2019
 base.0=C\:\\Users\\TEMP.DESKTOP-3EJ4NSL.000.001\\Documents\\ProjetoAndroid\\ProjetoAndroid\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

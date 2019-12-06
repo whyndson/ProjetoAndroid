@@ -2032,6 +2032,10 @@
         "source": "C:\\Users\\TEMP.DESKTOP-3EJ4NSL.000.001\\.gradle\\caches\\transforms-2\\files-2.1\\c0a39027978b83a483a047f5c31d0c4e\\core-1.0.1\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
+        "merged": "C:\\Users\\TEMP.DESKTOP-3EJ4NSL.000.001\\Documents\\ProjetoAndroid\\ProjetoAndroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_formulario_cronograma.xml.flat",
+        "source": "C:\\Users\\TEMP.DESKTOP-3EJ4NSL.000.001\\Documents\\ProjetoAndroid\\ProjetoAndroid\\app\\src\\main\\res\\layout\\activity_formulario_cronograma.xml"
+    },
+    {
         "merged": "C:\\Users\\TEMP.DESKTOP-3EJ4NSL.000.001\\Documents\\ProjetoAndroid\\ProjetoAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_redacao_icon.png.flat",
         "source": "C:\\Users\\TEMP.DESKTOP-3EJ4NSL.000.001\\Documents\\ProjetoAndroid\\ProjetoAndroid\\app\\src\\main\\res\\drawable\\redacao_icon.png"
     },

@@ -1078,7 +1078,6 @@ id action_text
 id actions
 id activity_agenda_floating_action_button
 id activity_chooser_view_content
-id activity_cronograma_list_view
 id activity_formulario_imageview
 id activity_formulario_selecionar_foto
 id activity_materia_floating_action_button
@@ -1133,14 +1132,22 @@ id drawer_layout
 id edit_query
 id edittext_cep
 id edittext_cidade
+id edittext_cod
 id edittext_comentario_nome
 id edittext_conteudo
 id edittext_data
 id edittext_desc
 id edittext_descc
+id edittext_domingo
 id edittext_estado
 id edittext_hora
 id edittext_nome
+id edittext_quarta
+id edittext_quinta
+id edittext_sabado
+id edittext_segunda
+id edittext_sexta
+id edittext_terca
 id end
 id enterAlways
 id enterAlwaysCollapsed
@@ -1153,6 +1160,7 @@ id fill_horizontal
 id fill_vertical
 id filled
 id fixed
+id floating_button
 id forever
 id ghost_view
 id gone
@@ -1182,6 +1190,7 @@ id line1
 id line3
 id listMode
 id list_item
+id listview_cronogramaativity
 id listview_lista_comentarios
 id masked
 id materia_name
@@ -1370,6 +1379,7 @@ layout activity_ajuda
 layout activity_cronograma
 layout activity_direitos_autorais
 layout activity_formulario
+layout activity_formulario_cronograma
 layout activity_lista_comentarios
 layout activity_main
 layout activity_materia
