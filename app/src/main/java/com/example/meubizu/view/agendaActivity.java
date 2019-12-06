@@ -45,6 +45,7 @@ public class agendaActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        
         registerForContextMenu(listView);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -126,10 +127,10 @@ public class agendaActivity extends AppCompatActivity {
 
         listView.setAdapter(adapter);
     }
+
     @Override
     public void onBackPressed(){
         super.onBackPressed();
-
         finish();
     }
 }

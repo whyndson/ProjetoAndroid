@@ -34,6 +34,7 @@ public class RascunhosDAO {
         dados.put("DESCRICAO", rascunho.getTexto());
         dados.put("ID_MATERIA", rascunho.getId_materia());
         dados.put("DATA_CRIACAO", rascunho.getDataDeCriacao());
+        dados.put("FOTO", rascunho.getFoto());
         return dados;
     }
 
@@ -50,8 +51,9 @@ public class RascunhosDAO {
             String texto = cursor.getString(cursor.getColumnIndex("DESCRICAO"));
             long id_materia = cursor.getLong(cursor.getColumnIndex("ID_MATERIA"));
             String data = cursor.getString(cursor.getColumnIndex("DATA_CRIACAO"));
+            String foto = cursor.getString(cursor.getColumnIndex("FOTO"));
 
-            lista.add(new Rascunho(titulo, texto,id_materia,data));
+            lista.add(new Rascunho(titulo, texto,id_materia,data, foto));
         }
 
         //Encerrar e liberar o cursor
@@ -66,14 +68,15 @@ public class RascunhosDAO {
         List<Rascunho> lista = new ArrayList<>();
 
         SQLiteDatabase db = conn.getWritableDatabase();
-        Cursor cursor = db.query("RASCUNHOS",new String[]{"ID","TITULO","DESCRICAO","DATA_CRIACAO"},"ID_MATERIA=?",new String[]{idMateria},null,null,null);
+        Cursor cursor = db.query("RASCUNHOS",new String[]{"ID","TITULO","DESCRICAO","DATA_CRIACAO", "FOTO"},"ID_MATERIA=?",new String[]{idMateria},null,null,null);
         while (cursor.moveToNext()) {
             String titulo = cursor.getString(cursor.getColumnIndex("TITULO"));
             String texto = cursor.getString(cursor.getColumnIndex("DESCRICAO"));
             long id = cursor.getLong(cursor.getColumnIndex("ID"));
             String data = cursor.getString(cursor.getColumnIndex("DATA_CRIACAO"));
+            String foto = cursor.getString(cursor.getColumnIndex("FOTO"));
 
-            lista.add(new Rascunho(titulo, texto,id_materia,id,data));
+            lista.add(new Rascunho(titulo, texto,id_materia,id,data, foto));
 
 
         }

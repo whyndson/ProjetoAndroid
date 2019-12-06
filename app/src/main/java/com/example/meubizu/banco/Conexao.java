@@ -17,7 +17,8 @@ public class Conexao extends SQLiteOpenHelper {
                 "TITULO TEXT NOT NULL," +
                 "ID_MATERIA INTEGER NOT NULL," +
                 "DATA_CRIACAO TEXT NOT NULL," +
-                "DESCRICAO TEXT NOT NULL);";
+                "DESCRICAO TEXT NOT NULL,"+
+                "FOTO TEXT)";
 
         String SQL_TABLE_AGENDA = "CREATE TABLE AGENDA (" +
                 "ID INTEGER PRIMARY KEY AUTOINCREMENT," +

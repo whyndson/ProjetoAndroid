@@ -66,15 +66,10 @@ public class Comentario implements Serializable {
 
     @Override
     public String toString() {
-        return "Comentário:" +
-                "Usuário: " + nome + '\'' +
-                ' ' +
-        "Cidade: " + cidade + '\'' +
-                ' ' +
-        "Estado: " + estado + '\'' +
-                ' ' +
-        "Conteúdo: " + conteudo + '\'' +
-                ' ';
+        return "Usuário: " + nome  +
+        "\nCidade: " + cidade  +
+        "\nEstado: " + estado +
+        "\n\nComentário: " + conteudo+"\n";
     }
 
 

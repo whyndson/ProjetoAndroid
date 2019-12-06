@@ -52,7 +52,6 @@ public class materiaActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Rascunho rascunho = (Rascunho) adapterView.getItemAtPosition(i);
-
                 Intent minhaIntent = new Intent(materiaActivity.this, RascunhoActivity.class);
                 Log.i("RascunhoIsNull","Chamou... Rascunho é null? "+(rascunho==null));
                 minhaIntent.putExtra("rascunho", rascunho);

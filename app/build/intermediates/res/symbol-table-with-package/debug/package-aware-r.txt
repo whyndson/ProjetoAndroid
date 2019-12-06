@@ -1007,6 +1007,7 @@ drawable filosofia_icon
 drawable fisica_icon
 drawable geografia_icon
 drawable historia_icon
+drawable ic_add_a_photo_black_24dp
 drawable ic_add_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1063,6 +1064,8 @@ id action_text
 id actions
 id activity_agenda_floating_action_button
 id activity_chooser_view_content
+id activity_formulario_imageview
+id activity_formulario_selecionar_foto
 id activity_main_list_view
 id activity_materia_floating_action_button
 id activity_materia_text_view
@@ -1086,7 +1089,6 @@ id buttonPanel
 id button_enviar
 id button_form
 id button_salvar
-id button_selecionar
 id center
 id center_horizontal
 id center_vertical
@@ -1304,6 +1306,7 @@ id visible
 id visualizar_agendamento_data
 id visualizar_agendamento_descricao
 id visualizar_agendamento_hora
+id visualizar_rascunho_imageview
 id visualizar_resumo_data
 id visualizar_resumo_descricao
 id visualizar_resumo_titulo
@@ -2037,3 +2040,4 @@ styleable Toolbar android_gravity android_minHeight buttonGravity collapseConten
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
+xml file_provider_paths

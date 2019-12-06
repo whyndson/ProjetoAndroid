@@ -24,27 +24,31 @@ public class Rascunho implements Serializable {
     private long id;
     private long id_materia;
     private String dataDeCriacao;
+    private String foto;
 
 
 
-    public Rascunho(String titulo, String texto, String materia, String dataDeCriacao) {
+    public Rascunho(String titulo, String texto, String materia, String dataDeCriacao, String foto) {
         this.titulo = titulo;
         this.texto = texto;
         this.dataDeCriacao = dataDeCriacao;
         setId_materiaPorNome(materia);
+        this.foto = foto;
     }
-    public Rascunho(String titulo, String texto, long id_materia,String dataDeCriacao) {
+    public Rascunho(String titulo, String texto, long id_materia,String dataDeCriacao, String foto) {
         this.titulo = titulo;
         this.texto = texto;
         this.id_materia = id_materia;
         this.dataDeCriacao = dataDeCriacao;
+        this.foto = foto;
     }
-    public Rascunho(String titulo, String texto, long id_materia,long id, String dataDeCriacao) {
+    public Rascunho(String titulo, String texto, long id_materia,long id, String dataDeCriacao, String foto) {
         this.titulo = titulo;
         this.texto = texto;
         this.id_materia = id_materia;
         this.dataDeCriacao = dataDeCriacao;
         this.id = id;
+        this.foto = foto;
     }
 
     public String getImagem() {
@@ -123,6 +127,14 @@ public class Rascunho implements Serializable {
     public long setId_materiaPorNome(String materia){
         this.id_materia = getIdDeUmaMateria(materia);
         return this.id_materia;
+    }
+
+    public String getFoto() {
+        return foto;
+    }
+
+    public void setFoto(String foto) {
+        this.foto = foto;
     }
 
     public String getDataDeCriacao() {

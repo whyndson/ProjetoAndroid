@@ -1,9 +1,13 @@
 package com.example.meubizu.view;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,5 +32,10 @@ public class RascunhoActivity extends AppCompatActivity {
         t2.setText(rascunho.getDataDeCriacao());
         TextView t3 = findViewById(R.id.visualizar_resumo_descricao);
         t3.setText(rascunho.getTexto());
+
+        ImageView img = findViewById(R.id.visualizar_rascunho_imageview);
+        Bitmap bitmap = BitmapFactory.decodeFile(rascunho.getFoto());
+        img.setImageBitmap(bitmap);
+        img.setTag(rascunho.getFoto());
     }
 }
