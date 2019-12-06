@@ -22,7 +22,7 @@
         <activity
             android:name=".view.AcontecimentoAgendaActivity"
             android:parentActivityName=".view.AgendaActivity" />
-        <activity android:name=".view.RascunhosActivity" />
+        <activity android:name=".view.RascunhosActivity" android:parentActivityName=".view.MainActivity"/>
         <activity
             android:name=".view.AgendaActivity"
             android:parentActivityName=".view.MainActivity" />
@@ -35,9 +35,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.MainActivity" />
+        <activity android:name=".view.MainActivity" android:theme="@style/ToDrawer"/>
         <activity android:name=".view.AdicionarComentarioActivity" />
-        <activity android:name=".view.ListaComentariosActivity" />
+        <activity android:name=".view.ListaComentariosActivity" android:parentActivityName=".view.MainActivity"/>
         <activity android:name=".view.FormularioActivity" />
         <activity
             android:name=".view.DireitosAutoraisActivity"
@@ -45,7 +45,7 @@
         <activity
             android:name=".view.CronogramaActivity"
             android:parentActivityName=".view.MainActivity" />
-        <activity android:name=".view.RascunhoActivity" />
+        <activity android:name=".view.RascunhoActivity"/>
 
         <receiver android:name=".view.InicioActivityBroadcast">
             <intent-filter>

@@ -26,36 +26,42 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="com.example.meubizu.view.VisualizarAgendamento" />
-        <activity android:name="com.example.meubizu.view.ajudaActivity" />
+        <activity android:name="com.example.meubizu.view.AjudaActivity" />
         <activity
-            android:name="com.example.meubizu.view.materiaActivity"
+            android:name="com.example.meubizu.view.MateriaActivity"
             android:theme="@style/FullScreenWithTopBar" />
         <activity
-            android:name="com.example.meubizu.view.acontecimentoAgendaActivity"
-            android:parentActivityName="com.example.meubizu.view.agendaActivity" />
-        <activity android:name="com.example.meubizu.view.rascunhosActivity" />
+            android:name="com.example.meubizu.view.AcontecimentoAgendaActivity"
+            android:parentActivityName="com.example.meubizu.view.AgendaActivity" />
         <activity
-            android:name="com.example.meubizu.view.agendaActivity"
-            android:parentActivityName="com.example.meubizu.view.mainActivity" />
+            android:name="com.example.meubizu.view.RascunhosActivity"
+            android:parentActivityName="com.example.meubizu.view.MainActivity" />
         <activity
-            android:name="com.example.meubizu.view.TelaAbertura"
-            android:theme="@style/FullScreenWithTopBar" >
+            android:name="com.example.meubizu.view.AgendaActivity"
+            android:parentActivityName="com.example.meubizu.view.MainActivity" />
+        <activity
+            android:name="com.example.meubizu.view.TelaAberturaActivity"
+            android:theme="@style/FullScreenWithoutTopBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.meubizu.view.mainActivity" />
+        <activity
+            android:name="com.example.meubizu.view.MainActivity"
+            android:theme="@style/ToDrawer" />
         <activity android:name="com.example.meubizu.view.AdicionarComentarioActivity" />
-        <activity android:name="com.example.meubizu.view.ListaComentariosActivity" />
-        <activity android:name="com.example.meubizu.view.formularioActivity" />
         <activity
-            android:name="com.example.meubizu.view.direitosAutoraisActivity"
-            android:parentActivityName="com.example.meubizu.view.mainActivity" />
+            android:name="com.example.meubizu.view.ListaComentariosActivity"
+            android:parentActivityName="com.example.meubizu.view.MainActivity" />
+        <activity android:name="com.example.meubizu.view.FormularioActivity" />
         <activity
-            android:name="com.example.meubizu.view.cronogramaActivity"
-            android:parentActivityName="com.example.meubizu.view.mainActivity" />
+            android:name="com.example.meubizu.view.DireitosAutoraisActivity"
+            android:parentActivityName="com.example.meubizu.view.MainActivity" />
+        <activity
+            android:name="com.example.meubizu.view.CronogramaActivity"
+            android:parentActivityName="com.example.meubizu.view.MainActivity" />
         <activity android:name="com.example.meubizu.view.RascunhoActivity" />
 
         <receiver android:name="com.example.meubizu.view.InicioActivityBroadcast" >

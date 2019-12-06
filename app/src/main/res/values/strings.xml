@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MeuBizu</string>
+
+    <string name="agenda">Agenda</string>
+    <string name="cronograma">Cronograma</string>
+    <string name="rascunhos">Rascunhos</string>
+    <string name="comentarios">Comentarios</string>
+
 </resources>

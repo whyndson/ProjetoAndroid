@@ -3,24 +3,12 @@
 android:orientation="vertical"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-android:padding="15sp">
+    android:padding="15sp">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
 
                 <TextView
-
                     android:id="@+id/visualizar_resumo_titulo"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
                     android:text="Título"
@@ -28,23 +16,21 @@ android:padding="15sp">
                     android:textAlignment="center"/>
 
                 <TextView
-
-                    android:layout_alignParentRigmht="true"
+                    android:layout_alignParentRight="true"
                     android:id="@+id/visualizar_resumo_data"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
                     android:text="Data"
                     android:textSize="20sp"
                     android:textAlignment="center"/>
 
-            </RelativeLayout>
             <TextView
                 android:fontFamily="cursive"
                 android:id="@+id/visualizar_resumo_descricao"
                 android:layout_marginTop="40sp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:textAlignment="inherit"
                 android:text="Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur ut arcu ut dui vehicula tincidunt. Aenean vestibulum ante sed sapien interdum egestas. Proin eros tellus, maximus ut leo sed, posuere accumsan dolor. Etiam quis magna ornare, tristique ante nec, tincidunt dui. Nulla vel urna sem. Cras venenatis nisl tellus, vel gravida sapien convallis in. Aliquam ut cursus lectus, et sollicitudin sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin ac tempus lacus, vitae ultrices neque."
                 android:textSize="20sp"/>
@@ -54,7 +40,5 @@ android:padding="15sp">
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
-        </LinearLayout>
-    </ScrollView>
 
 </LinearLayout>

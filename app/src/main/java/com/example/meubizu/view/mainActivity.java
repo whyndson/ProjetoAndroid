@@ -1,57 +1,52 @@
 package com.example.meubizu.view;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.meubizu.R;
+import com.google.android.material.navigation.NavigationView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener{
 
-    private static final String[] campos = {"Agenda", "Cronograma",
-            "Mapa", "Rascunhos", "Comentários"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, campos);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.my_awesome_toolbar);
+        setSupportActionBar(toolbar);
 
-        ListView listView = findViewById(R.id.activity_main_list_view);
-        listView.setAdapter(adapter);
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
 
-        registerForContextMenu(listView);
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        toolbar.setNavigationIcon(R.drawable.ic_menu);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                if(campos[position].equalsIgnoreCase("agenda")){
-                    Intent intent = new Intent(MainActivity.this, AgendaActivity.class);
-                    startActivity(intent);
-                }else if(campos[position].equalsIgnoreCase("cronograma")){
-                    Intent intent = new Intent(MainActivity.this, CronogramaActivity.class);
-                    startActivity(intent);
-                }else if(campos[position].equalsIgnoreCase("mapa")){
-                    Toast.makeText(MainActivity.this, "Esta seção ainda será implementada",
-                            Toast.LENGTH_SHORT).show();
-                }else if(campos[position].equalsIgnoreCase("rascunhos")){
-                    Intent intent = new Intent(MainActivity.this, RascunhosActivity.class);
-                    startActivity(intent);
-                }else if(campos[position].equalsIgnoreCase("comentários")){
-                    Intent intent = new Intent(MainActivity.this, ListaComentariosActivity.class);
-                    startActivity(intent);
-                }
+            public void onClick(View view) {
+                DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+                drawerLayout.openDrawer(Gravity.LEFT);
             }
         });
+
+        DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawerLayout.setStatusBarBackgroundColor(getResources().getColor(R.color.colorPrimary));
+        drawerLayout.closeDrawers();
+
     }
 
     @Override
@@ -73,5 +68,35 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+        int id = menuItem.getItemId();
+        Intent intent;
+        switch (id){
+            case R.id.nav_agenda:
+                intent = new Intent(MainActivity.this, AgendaActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.nav_cronograma:
+                intent = new Intent(MainActivity.this, CronogramaActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.nav_rascunhos:
+                intent = new Intent(MainActivity.this, RascunhosActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.nav_comentarios:
+                intent = new Intent(MainActivity.this, ListaComentariosActivity.class);
+                startActivity(intent);
+                break;
+
+            default:
+                Toast.makeText(getBaseContext(),"Opção inválida",Toast.LENGTH_SHORT);
+                break;
+        }
+
+        return false;
     }
 }
