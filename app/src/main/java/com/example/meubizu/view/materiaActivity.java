@@ -91,7 +91,6 @@ public class MateriaActivity extends AppCompatActivity {
         //OPCAO EDITAR
         if(item.getItemId() == R.id.menu_editar){
             //CRIA A INTENT, ADD O PRODUTO E INICIA A ACITIVITY
-            Log.i("SQLITE","ID: "+p.getId());
             Intent i = new Intent(getBaseContext(), FormularioActivity.class);
             i.putExtra("rascunho", p);
             startActivity(i);

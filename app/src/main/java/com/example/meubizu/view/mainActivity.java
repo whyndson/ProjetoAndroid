@@ -91,7 +91,6 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
                 intent = new Intent(MainActivity.this, ListaComentariosActivity.class);
                 startActivity(intent);
                 break;
-
             default:
                 Toast.makeText(getBaseContext(),"Opção inválida",Toast.LENGTH_SHORT);
                 break;

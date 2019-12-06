@@ -11,146 +11,149 @@
 10        android:targetSdkVersion="29" />
 10-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml
 11
-12    <uses-permission android:name="android.permission.INTERNET" />
-12-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:6:5-67
-12-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:6:22-64
-13    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-13-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:7:5-81
-13-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:7:22-78
-14
-15    <dist:module dist:instant="true" />
-15-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:73:5-40
-15-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:73:18-37
-16
-17    <application
-17-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:10:5-71:19
-18        android:allowBackup="true"
-18-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:11:9-35
-19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.0.1] C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\.gradle\caches\transforms-2\files-2.1\c0a39027978b83a483a047f5c31d0c4e\core-1.0.1\AndroidManifest.xml:22:18-86
-20        android:debuggable="true"
-21        android:icon="@mipmap/ic_launcher"
-21-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:12:9-43
-22        android:label="@string/app_name"
-22-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:13:9-41
-23        android:roundIcon="@mipmap/ic_launcher_round"
-23-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:14:9-54
-24        android:supportsRtl="true"
-24-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:15:9-35
-25        android:testOnly="true"
-26        android:theme="@style/AppTheme" >
-26-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:16:9-40
-27        <activity android:name="com.example.meubizu.view.CronogramaActivity" />
-27-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:18:9-60
-27-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:18:19-58
-28        <activity android:name="com.example.meubizu.view.FormularioCronogramaActivity" />
-28-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:19:9-70
-28-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:19:19-68
-29        <activity android:name="com.example.meubizu.view.VisualizarAgendamento" />
-29-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:23:9-73
-29-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:23:19-61
-30        <activity android:name="com.example.meubizu.view.AjudaActivity" />
-30-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:24:9-56
-30-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:24:19-53
-31        <activity
-31-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:25:9-27:59
-32            android:name="com.example.meubizu.view.MateriaActivity"
-32-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:26:13-49
-33            android:theme="@style/FullScreenWithTopBar" />
-33-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:27:13-56
-34        <activity
-34-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:28:9-30:65
-35            android:name="com.example.meubizu.view.AcontecimentoAgendaActivity"
-35-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:29:13-61
-36            android:parentActivityName="com.example.meubizu.view.AgendaActivity" />
-36-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:30:13-62
-37        <activity
-37-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:31:9-107
-38            android:name="com.example.meubizu.view.RascunhosActivity"
-38-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:31:19-57
-39            android:parentActivityName="com.example.meubizu.view.MainActivity" />
-39-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:31:58-105
-40        <activity
-40-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:32:9-34:63
-41            android:name="com.example.meubizu.view.AgendaActivity"
-41-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:33:13-48
-42            android:parentActivityName="com.example.meubizu.view.MainActivity" />
-42-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:34:13-60
-43        <activity
-43-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:36:9-44:20
-44            android:name="com.example.meubizu.view.TelaAberturaActivity"
-44-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:37:13-54
-45            android:theme="@style/FullScreenWithoutTopBar" >
-45-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:38:13-59
-46            <intent-filter>
-46-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:39:13-43:29
-47                <action android:name="android.intent.action.MAIN" />
-47-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:40:17-69
-47-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:40:25-66
-48
-49                <category android:name="android.intent.category.LAUNCHER" />
-49-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:42:17-77
-49-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:42:27-74
-50            </intent-filter>
-51        </activity>
-52        <activity
-52-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:45:9-86
-53            android:name="com.example.meubizu.view.MainActivity"
-53-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:45:19-52
-54            android:theme="@style/ToDrawer" />
-54-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:45:53-84
-55        <activity android:name="com.example.meubizu.view.AdicionarComentarioActivity" />
-55-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:46:9-70
-55-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:46:19-67
-56        <activity
-56-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:47:9-114
-57            android:name="com.example.meubizu.view.ListaComentariosActivity"
-57-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:47:19-64
-58            android:parentActivityName="com.example.meubizu.view.MainActivity" />
-58-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:47:65-112
-59        <activity android:name="com.example.meubizu.view.FormularioActivity" />
-59-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:48:9-61
-59-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:48:19-58
-60        <activity
-60-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:49:9-51:63
-61            android:name="com.example.meubizu.view.DireitosAutoraisActivity"
-61-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:50:13-58
-62            android:parentActivityName="com.example.meubizu.view.MainActivity" />
-62-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:51:13-60
-63        <activity android:name="com.example.meubizu.view.RascunhoActivity" />
-63-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:52:9-58
-63-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:52:19-56
-64
-65        <receiver android:name="com.example.meubizu.view.InicioActivityBroadcast" >
-65-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:54:9-59:20
-65-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:54:19-63
-66            <intent-filter>
-66-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:55:13-58:29
-67                <action android:name="android.intent.action.BOOT_COMPLETED" />
-67-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:56:17-79
-67-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:56:25-76
-68                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
-68-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:57:17-82
-68-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:57:25-79
-69            </intent-filter>
-70        </receiver>
-71
-72        <provider
-73            android:name="androidx.core.content.FileProvider"
-73-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:62:13-62
-74            android:authorities="com.example.meubizu.provider"
-74-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:63:13-60
-75            android:exported="false"
-75-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:64:13-37
-76            android:grantUriPermissions="true" >
-76-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:65:13-47
-77            <meta-data
-77-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:66:13-68:63
-78                android:name="android.support.FILE_PROVIDER_PATHS"
-78-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:67:17-67
-79                android:resource="@xml/file_provider_paths" />
-79-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:68:17-60
-80        </provider>
-81    </application>
-82
-83</manifest>
+12    <uses-permission android:name="android.permission.CALL_PHONE" />
+12-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:6:5-69
+12-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:6:22-66
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:7:5-67
+13-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:7:22-64
+14    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+14-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:8:5-81
+14-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:8:22-78
+15
+16    <dist:module dist:instant="true" />
+16-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:73:5-40
+16-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:73:18-37
+17
+18    <application
+18-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:11:5-71:19
+19        android:allowBackup="true"
+19-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:12:9-35
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.0.1] C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\.gradle\caches\transforms-2\files-2.1\c0a39027978b83a483a047f5c31d0c4e\core-1.0.1\AndroidManifest.xml:22:18-86
+21        android:debuggable="true"
+22        android:icon="@mipmap/ic_launcher"
+22-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:13:9-43
+23        android:label="@string/app_name"
+23-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:14:9-41
+24        android:roundIcon="@mipmap/ic_launcher_round"
+24-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:15:9-54
+25        android:supportsRtl="true"
+25-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:16:9-35
+26        android:testOnly="true"
+27        android:theme="@style/AppTheme" >
+27-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:17:9-40
+28        <activity android:name="com.example.meubizu.view.CronogramaActivity" />
+28-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:19:9-60
+28-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:19:19-58
+29        <activity android:name="com.example.meubizu.view.FormularioCronogramaActivity" />
+29-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:20:9-70
+29-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:20:19-68
+30        <activity android:name="com.example.meubizu.view.VisualizarAgendamento" />
+30-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:23:9-73
+30-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:23:19-61
+31        <activity android:name="com.example.meubizu.view.AjudaActivity" />
+31-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:24:9-56
+31-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:24:19-53
+32        <activity
+32-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:25:9-27:59
+33            android:name="com.example.meubizu.view.MateriaActivity"
+33-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:26:13-49
+34            android:theme="@style/FullScreenWithTopBar" />
+34-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:27:13-56
+35        <activity
+35-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:28:9-30:65
+36            android:name="com.example.meubizu.view.AcontecimentoAgendaActivity"
+36-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:29:13-61
+37            android:parentActivityName="com.example.meubizu.view.AgendaActivity" />
+37-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:30:13-62
+38        <activity
+38-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:31:9-107
+39            android:name="com.example.meubizu.view.RascunhosActivity"
+39-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:31:19-57
+40            android:parentActivityName="com.example.meubizu.view.MainActivity" />
+40-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:31:58-105
+41        <activity
+41-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:32:9-34:63
+42            android:name="com.example.meubizu.view.AgendaActivity"
+42-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:33:13-48
+43            android:parentActivityName="com.example.meubizu.view.MainActivity" />
+43-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:34:13-60
+44        <activity
+44-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:36:9-44:20
+45            android:name="com.example.meubizu.view.TelaAberturaActivity"
+45-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:37:13-54
+46            android:theme="@style/FullScreenWithoutTopBar" >
+46-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:38:13-59
+47            <intent-filter>
+47-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:39:13-43:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:40:17-69
+48-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:40:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:42:17-77
+50-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:42:27-74
+51            </intent-filter>
+52        </activity>
+53        <activity
+53-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:45:9-86
+54            android:name="com.example.meubizu.view.MainActivity"
+54-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:45:19-52
+55            android:theme="@style/ToDrawer" />
+55-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:45:53-84
+56        <activity android:name="com.example.meubizu.view.AdicionarComentarioActivity" />
+56-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:46:9-70
+56-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:46:19-67
+57        <activity
+57-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:47:9-114
+58            android:name="com.example.meubizu.view.ListaComentariosActivity"
+58-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:47:19-64
+59            android:parentActivityName="com.example.meubizu.view.MainActivity" />
+59-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:47:65-112
+60        <activity android:name="com.example.meubizu.view.FormularioActivity" />
+60-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:48:9-61
+60-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:48:19-58
+61        <activity
+61-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:49:9-51:63
+62            android:name="com.example.meubizu.view.DireitosAutoraisActivity"
+62-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:50:13-58
+63            android:parentActivityName="com.example.meubizu.view.MainActivity" />
+63-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:51:13-60
+64        <activity android:name="com.example.meubizu.view.RascunhoActivity" />
+64-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:52:9-58
+64-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:52:19-56
+65
+66        <receiver android:name="com.example.meubizu.view.InicioActivityBroadcast" >
+66-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:54:9-59:20
+66-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:54:19-63
+67            <intent-filter>
+67-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:55:13-58:29
+68                <action android:name="android.intent.action.BOOT_COMPLETED" />
+68-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:56:17-79
+68-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:56:25-76
+69                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+69-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:57:17-82
+69-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:57:25-79
+70            </intent-filter>
+71        </receiver>
+72
+73        <provider
+74            android:name="androidx.core.content.FileProvider"
+74-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:62:13-62
+75            android:authorities="com.example.meubizu.provider"
+75-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:63:13-60
+76            android:exported="false"
+76-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:64:13-37
+77            android:grantUriPermissions="true" >
+77-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:65:13-47
+78            <meta-data
+78-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:66:13-68:63
+79                android:name="android.support.FILE_PROVIDER_PATHS"
+79-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:67:17-67
+80                android:resource="@xml/file_provider_paths" />
+80-->C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:68:17-60
+81        </provider>
+82    </application>
+83
+84</manifest>

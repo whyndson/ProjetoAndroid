@@ -65,16 +65,20 @@ INJECTED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\Pro
 		INJECTED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.CALL_PHONE
+ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:6:5-69
+	android:name
+		ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:6:22-66
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:6:5-67
+ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:7:5-67
 	android:name
-		ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:6:22-64
+		ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:7:22-64
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:7:5-81
+ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:8:5-81
 	android:name
-		ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:7:22-78
+		ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:8:22-78
 application
-ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:10:5-71:19
+ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:11:5-71:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\.gradle\caches\transforms-2\files-2.1\2946ca0ea6c89dab7d7d9fbc18e54292\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\.gradle\caches\transforms-2\files-2.1\2946ca0ea6c89dab7d7d9fbc18e54292\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\.gradle\caches\transforms-2\files-2.1\508ac768b50158a079142e4dc4915061\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
@@ -86,25 +90,25 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\TE
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.0.1] C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\.gradle\caches\transforms-2\files-2.1\c0a39027978b83a483a047f5c31d0c4e\core-1.0.1\AndroidManifest.xml:22:18-86
 	android:supportsRtl
-		ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:15:9-35
+		ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:13:9-41
+		ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:14:9-41
 	android:roundIcon
-		ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:14:9-54
+		ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:15:9-54
 	android:icon
-		ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:12:9-43
+		ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:13:9-43
 	android:allowBackup
-		ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:12:9-35
 	android:theme
-		ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:16:9-40
+		ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:17:9-40
 activity#com.example.meubizu.view.CronogramaActivity
-ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:18:9-60
+ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:19:9-60
 	android:name
-		ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:18:19-58
+		ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:19:19-58
 activity#com.example.meubizu.view.FormularioCronogramaActivity
-ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:19:9-70
+ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:20:9-70
 	android:name
-		ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:19:19-68
+		ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:20:19-68
 activity#com.example.meubizu.view.VisualizarAgendamento
 ADDED from C:\Users\TEMP.DESKTOP-3EJ4NSL.000.001\Documents\ProjetoAndroid\ProjetoAndroid\app\src\main\AndroidManifest.xml:23:9-73
 	android:name

@@ -70,15 +70,18 @@ public class FormularioActivity extends AppCompatActivity {
         if (intent.hasExtra("materia")) {
             this.materia = (String) intent.getSerializableExtra("materia");
         }
-        /*
+
         if (intent.hasExtra("rascunho")) {
             this.rascunho = (Rascunho) intent.getSerializableExtra("rascunho");
             if (this.rascunho != null) {
                 titulo.setText(rascunho.getTitulo());
                 descricao.setText(rascunho.getTexto());
-                ok.setText("EDITAR");
+                Bitmap bitmap = BitmapFactory.decodeFile(rascunho.getFoto());
+                img.setImageBitmap(bitmap);
+                img.setTag(rascunho.getFoto());
+                enviar.setText("EDITAR");
             }
-        }*/
+        }
 
         //CLICAR NO BOTÃO ENVIAR
         enviar.setOnClickListener(new View.OnClickListener() {

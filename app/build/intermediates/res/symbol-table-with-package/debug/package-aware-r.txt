@@ -1024,6 +1024,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_pencil
+drawable ic_phone_in_talk_black_24dp
 drawable ic_schedule
 drawable ic_today
 drawable icon

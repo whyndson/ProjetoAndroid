@@ -65,22 +65,6 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\TEMP.DESKTOP-3EJ4NSL.000.001\\Documents\\ProjetoAndroid\\ProjetoAndroid\\app\\build\\intermediates\\res\\merged\\debug\\values-v28_values-v28.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\TEMP.DESKTOP-3EJ4NSL.000.001\\.gradle\\caches\\transforms-2\\files-2.1\\906744c4ddcbc384c5a8d2d69414f8fa\\appcompat-1.0.2\\res\\values-v28\\values-v28.xml",
-                    "from": {
-                        "startLines": "2,3,4,8",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,130,217,447",
-                        "endLines": "2,3,7,11",
-                        "endColumns": "74,86,12,12",
-                        "endOffsets": "125,212,442,684"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "C:\\Users\\TEMP.DESKTOP-3EJ4NSL.000.001\\Documents\\ProjetoAndroid\\ProjetoAndroid\\app\\build\\intermediates\\res\\merged\\debug\\values-pa_values-pa.arsc.flat",
             "map": [
                 {
@@ -108,6 +92,22 @@
                         "startOffsets": "105,208,305,410,496,596,709,786,862,953,1046,1142,1236,1337,1430,1525,1619,1710,1801,1880,1981,2085,2182,2291,2390,2500,2659,2759",
                         "endColumns": "102,96,104,85,99,112,76,75,90,92,95,93,100,92,94,93,90,90,78,100,103,96,108,98,109,158,99,79",
                         "endOffsets": "203,300,405,491,591,704,781,857,948,1041,1137,1231,1332,1425,1520,1614,1705,1796,1875,1976,2080,2177,2286,2385,2495,2654,2754,2834"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\TEMP.DESKTOP-3EJ4NSL.000.001\\Documents\\ProjetoAndroid\\ProjetoAndroid\\app\\build\\intermediates\\res\\merged\\debug\\values-v28_values-v28.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\TEMP.DESKTOP-3EJ4NSL.000.001\\.gradle\\caches\\transforms-2\\files-2.1\\906744c4ddcbc384c5a8d2d69414f8fa\\appcompat-1.0.2\\res\\values-v28\\values-v28.xml",
+                    "from": {
+                        "startLines": "2,3,4,8",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,130,217,447",
+                        "endLines": "2,3,7,11",
+                        "endColumns": "74,86,12,12",
+                        "endOffsets": "125,212,442,684"
                     }
                 }
             ]

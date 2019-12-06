@@ -33,7 +33,6 @@
             android:hint="DESCRICAO-DOMINGO"
             />
 
-
         <EditText
             android:id="@+id/edittext_segunda"
             android:layout_width="match_parent"
