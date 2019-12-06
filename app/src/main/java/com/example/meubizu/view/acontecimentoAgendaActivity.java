@@ -3,6 +3,7 @@ package com.example.meubizu.view;
 import android.content.Intent;
 import android.os.Bundle;
 
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -18,7 +19,7 @@ import com.example.meubizu.banco.AgendaDAO;
 import com.example.meubizu.model.Agenda;
 import com.example.meubizu.utils.Mask;
 
-public class acontecimentoAgendaActivity extends AppCompatActivity {
+public class AcontecimentoAgendaActivity extends AppCompatActivity {
     Agenda agenda = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +35,9 @@ public class acontecimentoAgendaActivity extends AppCompatActivity {
 
 
         final EditText data = (EditText) findViewById(R.id.edittext_data);
+
         data.addTextChangedListener(Mask.insertMaskDate("##/##/####", data));
+
         data.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View view, boolean b) {
@@ -42,10 +45,23 @@ public class acontecimentoAgendaActivity extends AppCompatActivity {
                     DialogFragment dialogfragment = new DateManagerDialog();
                     dialogfragment.show(getSupportFragmentManager(), "Date");
                 }
+
             }
         });
 
+
         final EditText hora = (EditText) findViewById(R.id.edittext_hora);
+        hora.addTextChangedListener(Mask.insertMaskHour("##:##", hora));
+        hora.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean b) {
+                if(b){
+                    DialogFragment dialogFragment = new TimeManagerDialog();
+                    dialogFragment.show(getSupportFragmentManager(),"Hour");
+                }
+            }
+        });
+
         final EditText descricao = (EditText) findViewById(R.id.edittext_descc);
 
 
@@ -109,8 +125,8 @@ public class acontecimentoAgendaActivity extends AppCompatActivity {
                 Toast.makeText(this, "Deus te abençoe!", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.direitos_autorais:
-                Intent intent = new Intent(acontecimentoAgendaActivity.this,
-                        direitosAutoraisActivity.class);
+                Intent intent = new Intent(AcontecimentoAgendaActivity.this,
+                        DireitosAutoraisActivity.class);
                 startActivity(intent);
                 break;
         }

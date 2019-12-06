@@ -20,13 +20,14 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
-public class materiaActivity extends AppCompatActivity {
+public class MateriaActivity extends AppCompatActivity {
 
     private String materia;
     private long id_materia;
 
     private ListView listView;
     ArrayAdapter adapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,7 +53,7 @@ public class materiaActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Rascunho rascunho = (Rascunho) adapterView.getItemAtPosition(i);
-                Intent minhaIntent = new Intent(materiaActivity.this, RascunhoActivity.class);
+                Intent minhaIntent = new Intent(MateriaActivity.this, RascunhoActivity.class);
                 Log.i("RascunhoIsNull","Chamou... Rascunho é null? "+(rascunho==null));
                 minhaIntent.putExtra("rascunho", rascunho);
                 startActivity(minhaIntent);
@@ -65,7 +66,7 @@ public class materiaActivity extends AppCompatActivity {
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent newIntent = new Intent(getBaseContext(), formularioActivity.class);
+                Intent newIntent = new Intent(getBaseContext(), FormularioActivity.class);
                 newIntent.putExtra("materia",materia);
                 startActivity(newIntent);
             }
@@ -91,7 +92,7 @@ public class materiaActivity extends AppCompatActivity {
         if(item.getItemId() == R.id.menu_editar){
             //CRIA A INTENT, ADD O PRODUTO E INICIA A ACITIVITY
             Log.i("SQLITE","ID: "+p.getId());
-            Intent i = new Intent(getBaseContext(), formularioActivity.class);
+            Intent i = new Intent(getBaseContext(), FormularioActivity.class);
             i.putExtra("rascunho", p);
             startActivity(i);
         }

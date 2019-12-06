@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.example.meubizu.R;
 
-public class ajudaActivity extends AppCompatActivity {
+public class AjudaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

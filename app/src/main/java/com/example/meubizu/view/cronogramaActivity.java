@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.meubizu.R;
 
-public class cronogramaActivity extends AppCompatActivity {
+public class CronogramaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +33,8 @@ public class cronogramaActivity extends AppCompatActivity {
                 Toast.makeText(this, "Deus te abençoe!", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.direitos_autorais:
-                Intent intent = new Intent(cronogramaActivity.this,
-                        direitosAutoraisActivity.class);
+                Intent intent = new Intent(CronogramaActivity.this,
+                        DireitosAutoraisActivity.class);
                 startActivity(intent);
                 break;
         }

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
 
-    tools:context=".view.direitosAutoraisActivity">
+    tools:context=".view.DireitosAutoraisActivity">
 
     <TextView
         android:id="@+id/titulo_direitos_autorais"

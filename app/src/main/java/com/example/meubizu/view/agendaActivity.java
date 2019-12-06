@@ -21,7 +21,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
-public class agendaActivity extends AppCompatActivity {
+public class AgendaActivity extends AppCompatActivity {
 
     ArrayAdapter adapter;
     private ListView listView;
@@ -40,8 +40,8 @@ public class agendaActivity extends AppCompatActivity {
         fbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(agendaActivity.this,
-                        acontecimentoAgendaActivity.class);
+                Intent intent = new Intent(AgendaActivity.this,
+                        AcontecimentoAgendaActivity.class);
                 startActivity(intent);
             }
         });
@@ -72,8 +72,8 @@ public class agendaActivity extends AppCompatActivity {
                 Toast.makeText(this, "Deus te abençoe!", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.direitos_autorais:
-                Intent intent = new Intent(agendaActivity.this,
-                        direitosAutoraisActivity.class);
+                Intent intent = new Intent(AgendaActivity.this,
+                        DireitosAutoraisActivity.class);
                 startActivity(intent);
                 break;
         }
@@ -100,7 +100,7 @@ public class agendaActivity extends AppCompatActivity {
         if(item.getItemId() == R.id.menu_editar){
             //CRIA A INTENT, ADD O PRODUTO E INICIA A ACITIVITY
             Log.i("SQLITE","ID: "+a.getId());
-            Intent i = new Intent(getBaseContext(), acontecimentoAgendaActivity.class);
+            Intent i = new Intent(getBaseContext(), AcontecimentoAgendaActivity.class);
             i.putExtra("agenda", a);
             startActivity(i);
         }

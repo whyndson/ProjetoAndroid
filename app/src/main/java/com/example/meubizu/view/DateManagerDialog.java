@@ -31,6 +31,7 @@ public class DateManagerDialog extends DialogFragment implements DatePickerDialo
         EditText birthDate = (EditText) getActivity().findViewById(R.id.edittext_data);
         Calendar dateSelected = Calendar.getInstance();
         dateSelected.set(i,i1,i2);
+        birthDate.setText("");
         birthDate.setText(sdf.format(dateSelected.getTime()));
     }
 }

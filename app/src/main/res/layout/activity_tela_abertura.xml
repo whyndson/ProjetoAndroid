@@ -5,15 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="@color/colorPrimaryDark">
+    android:background="#fff2f2">
 
-    <TextView
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="MeuBizu"
-        android:textSize="50dp"
-        android:textColor="@color/design_default_color_primary_dark"
-        android:background="@color/colorAccent"/>
+        android:src="@drawable/icon"/>
 
 </RelativeLayout>

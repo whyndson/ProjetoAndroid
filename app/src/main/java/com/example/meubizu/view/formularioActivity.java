@@ -21,15 +21,13 @@ import androidx.core.content.FileProvider;
 
 import com.example.meubizu.BuildConfig;
 import com.example.meubizu.R;
-import com.example.meubizu.banco.Conexao;
 import com.example.meubizu.banco.RascunhosDAO;
-import com.example.meubizu.model.Materia;
 import com.example.meubizu.model.Rascunho;
 
 import java.io.File;
 import java.util.Calendar;
 
-public class formularioActivity extends AppCompatActivity {
+public class FormularioActivity extends AppCompatActivity {
 
     private Button enviar;
     private EditText titulo, descricao;
@@ -60,7 +58,7 @@ public class formularioActivity extends AppCompatActivity {
                 File file = new File(caminhoFoto);
                 intent.putExtra(MediaStore.EXTRA_OUTPUT,
                         FileProvider.getUriForFile(
-                                formularioActivity.this,
+                                FormularioActivity.this,
                                 BuildConfig.APPLICATION_ID + ".provider",
                                 file
                         ));
@@ -157,8 +155,8 @@ public class formularioActivity extends AppCompatActivity {
                 Toast.makeText(this, "Deus te abençoe!", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.direitos_autorais:
-                Intent intent = new Intent(formularioActivity.this,
-                        direitosAutoraisActivity.class);
+                Intent intent = new Intent(FormularioActivity.this,
+                        DireitosAutoraisActivity.class);
                 startActivity(intent);
                 break;
         }

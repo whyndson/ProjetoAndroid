@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import com.example.meubizu.R;
 
-public class mainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     private static final String[] campos = {"Agenda", "Cronograma",
             "Mapa", "Rascunhos", "Comentários"};
@@ -35,19 +35,19 @@ public class mainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 if(campos[position].equalsIgnoreCase("agenda")){
-                    Intent intent = new Intent(mainActivity.this, agendaActivity.class);
+                    Intent intent = new Intent(MainActivity.this, AgendaActivity.class);
                     startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("cronograma")){
-                    Intent intent = new Intent(mainActivity.this, cronogramaActivity.class);
+                    Intent intent = new Intent(MainActivity.this, CronogramaActivity.class);
                     startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("mapa")){
-                    Toast.makeText(mainActivity.this, "Esta seção ainda será implementada",
+                    Toast.makeText(MainActivity.this, "Esta seção ainda será implementada",
                             Toast.LENGTH_SHORT).show();
                 }else if(campos[position].equalsIgnoreCase("rascunhos")){
-                    Intent intent = new Intent(mainActivity.this, rascunhosActivity.class);
+                    Intent intent = new Intent(MainActivity.this, RascunhosActivity.class);
                     startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("comentários")){
-                    Intent intent = new Intent(mainActivity.this, ListaComentariosActivity.class);
+                    Intent intent = new Intent(MainActivity.this, ListaComentariosActivity.class);
                     startActivity(intent);
                 }
             }
@@ -67,8 +67,8 @@ public class mainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Deus te abençoe!", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.direitos_autorais:
-                Intent intent = new Intent(mainActivity.this,
-                        direitosAutoraisActivity.class);
+                Intent intent = new Intent(MainActivity.this,
+                        DireitosAutoraisActivity.class);
                 startActivity(intent);
         }
 

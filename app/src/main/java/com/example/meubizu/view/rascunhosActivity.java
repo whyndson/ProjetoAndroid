@@ -13,13 +13,11 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.meubizu.R;
-import com.example.meubizu.banco.RascunhosDAO;
 import com.example.meubizu.model.Materia;
-import com.example.meubizu.model.Rascunho;
 
 import java.util.ArrayList;
 
-public class rascunhosActivity extends AppCompatActivity {
+public class RascunhosActivity extends AppCompatActivity {
 
     private static final String[] campos = {"Biologia", "Espanhol", "Filosofia", "Física",
             "Geografia",
@@ -40,51 +38,51 @@ public class rascunhosActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 if(campos[position].equalsIgnoreCase("biologia")){
-                    Intent intent = new Intent(rascunhosActivity.this, materiaActivity.class);
+                    Intent intent = new Intent(RascunhosActivity.this, MateriaActivity.class);
                     intent.putExtra("materia", "Biologia");
                     startActivity(intent);
                 }if(campos[position].equalsIgnoreCase("espanhol")){
-                    Intent intent = new Intent(rascunhosActivity.this, materiaActivity.class);
+                    Intent intent = new Intent(RascunhosActivity.this, MateriaActivity.class);
                     intent.putExtra("materia", "Espanhol");
                     startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("filosofia")){
-                    Intent intent = new Intent(rascunhosActivity.this, materiaActivity.class);
+                    Intent intent = new Intent(RascunhosActivity.this, MateriaActivity.class);
                     intent.putExtra("materia", "Filosofia");
                     startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("física")){
-                    Intent intent = new Intent(rascunhosActivity.this, materiaActivity.class);
+                    Intent intent = new Intent(RascunhosActivity.this, MateriaActivity.class);
                     intent.putExtra("materia", "Física");
                     startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("geografia")){
-                    Intent intent = new Intent(rascunhosActivity.this, materiaActivity.class);
+                    Intent intent = new Intent(RascunhosActivity.this, MateriaActivity.class);
                     intent.putExtra("materia", "Geografia");
                     startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("história")){
-                    Intent intent = new Intent(rascunhosActivity.this, materiaActivity.class);
+                    Intent intent = new Intent(RascunhosActivity.this, MateriaActivity.class);
                     intent.putExtra("materia", "História");
                     startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("inglês")){
-                    Intent intent = new Intent(rascunhosActivity.this, materiaActivity.class);
+                    Intent intent = new Intent(RascunhosActivity.this, MateriaActivity.class);
                     intent.putExtra("materia", "Inglês");
                     startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("matemática")){
-                    Intent intent = new Intent(rascunhosActivity.this, materiaActivity.class);
+                    Intent intent = new Intent(RascunhosActivity.this, MateriaActivity.class);
                     intent.putExtra("materia", "Matemática");
                     startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("português")){
-                    Intent intent = new Intent(rascunhosActivity.this, materiaActivity.class);
+                    Intent intent = new Intent(RascunhosActivity.this, MateriaActivity.class);
                     intent.putExtra("materia", "Português");
                     startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("redação")){
-                    Intent intent = new Intent(rascunhosActivity.this, materiaActivity.class);
+                    Intent intent = new Intent(RascunhosActivity.this, MateriaActivity.class);
                     intent.putExtra("materia", "Redação");
                     startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("química")){
-                    Intent intent = new Intent(rascunhosActivity.this, materiaActivity.class);
+                    Intent intent = new Intent(RascunhosActivity.this, MateriaActivity.class);
                     intent.putExtra("materia", "Química");
                     startActivity(intent);
                 }else if(campos[position].equalsIgnoreCase("sociologia")){
-                    Intent intent = new Intent(rascunhosActivity.this, materiaActivity.class);
+                    Intent intent = new Intent(RascunhosActivity.this, MateriaActivity.class);
                     intent.putExtra("materia", "Sociologia");
                     startActivity(intent);
                 }
@@ -105,8 +103,8 @@ public class rascunhosActivity extends AppCompatActivity {
                 Toast.makeText(this, "Deus te abençoe!", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.direitos_autorais:
-                Intent intent = new Intent(rascunhosActivity.this,
-                        direitosAutoraisActivity.class);
+                Intent intent = new Intent(RascunhosActivity.this,
+                        DireitosAutoraisActivity.class);
                 startActivity(intent);
                 break;
         }

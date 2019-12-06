@@ -14,7 +14,7 @@ import android.widget.Toast;
 import com.example.meubizu.R;
 
 
-public class direitosAutoraisActivity extends AppCompatActivity {
+public class DireitosAutoraisActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
